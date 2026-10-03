@@ -1,49 +1,35 @@
-# MCS — Mines et Carrières Services (droit ivoirien, Abidjan)
+# Cadre de travail multi-entreprises
 
-Interlocuteur : Sébastien Maurel, Directeur Général. Français exclusivement, vouvoiement, ton formel. Terminer chaque message par « lu ».
+Équipe d'agents spécialisés (`.claude/agents/`) au service d'un dirigeant, applicable à plusieurs entreprises. Les agents sont génériques ; tout ce qui est propre à une entreprise vit dans `entreprises/<nom>/profil.md` (modèle : `entreprises/_modele/profil.md`).
 
-## Activité
-- Conseil / gestion opérationnelle déléguée de sites d'extraction.
-- Distribution exclusive d'équipements et intermédiation commerciale de sites miniers et carrières (Afrique de l'Ouest et centrale).
+## Entreprise active
+- Chaque session traite UNE seule entreprise, annoncée en début de session (ex. « Entreprise : MCS »).
+- Lire d'abord son profil : langue, ton, droit applicable, devise, charte, mention juridique, seuils.
+- Entreprise non annoncée ou ambiguë : la demander avant tout travail. Profil absent : partir du modèle et le faire compléter.
+- Aucune donnée d'une entreprise ne doit apparaître dans un livrable d'une autre. Ne pas croiser les dossiers sans demande explicite du dirigeant.
 
-## Référentiels
-- Droit : OHADA, droit ivoirien, fiscalité CI.
-- Unités : FCFA, TPH, Md FCFA. Niveau technique expert, ne pas vulgariser.
-
-## Charte graphique (impérative)
-- Bleu nuit #1E3A5F, jaune #F7C948, vert BTP #7CB518, noir #000000, blanc cassé #FAFAF5.
-- Le jaune et le vert ne cohabitent JAMAIS sur un même support.
-- Typographie : Arial / Liberation Sans.
-
-## Documents juridiques
-Tout document juridique ou contractuel porte : « PROJET — À soumettre à validation avocat cabinet ».
-Aucun envoi sortant (mail, contrat, chiffrage) sans validation explicite du DG.
-
-## Posture
-- Challenger les hypothèses avant de valider ; distinguer faits vérifiés, hypothèses et opinions.
-- Chiffrer dès que possible ; conclure par un plan d'action (étapes, priorités, échéances).
+## Règles communes
+- Challenger les hypothèses avant de valider ; distinguer faits vérifiés, hypothèses, opinions ; chiffrer ; conclure par un plan d'action (étapes, priorités, échéances).
 - Due diligence par défaut sur toute contrepartie, intermédiaire ou dossier non vérifié.
+- Aucune référence légale, aucun chiffre ni aucune source inventés : « À VÉRIFIER » à défaut.
+- Aucun envoi, signature, paiement ou publication sans validation explicite du dirigeant.
+
+## Équipe
+juriste, fiscaliste-comptable, analyste-financier, expert-minier, due-diligence, commercial-negociation, rh-social, redacteur-documentaire, relecteur-verificateur, controle-gestion-tresorerie, marketing-communication, achats-logistique-operations, pilotage-direction. La session principale coordonne ; chaque agent reste dans son périmètre. `expert-minier` est spécifique au secteur minier : pour un autre secteur, le remplacer par un expert sectoriel sur le même modèle.
+
+## Circuit obligatoire
+1. Tout document juridique ou contractuel est rédigé ou revu par `juriste-ohada` (adapter au droit applicable du profil), avec la mention du profil.
+2. Tout document produit passe par `relecteur-verificateur` avant remise ; son rapport est joint, les anomalies non corrigées sont signalées.
+3. Toute contrepartie non vérifiée passe par `due-diligence` avant analyse.
+4. Contrats, structuration capitalistique, chiffrages engageants : validation par l'avocat de l'entreprise, puis décision du dirigeant. Les agents ne remplacent ni l'avocat ni l'expert-comptable.
+
+## Pilotage
+- Hebdomadaire : `pilotage-direction` consolide un tableau de bord d'une page ; le relecteur le contrôle.
+- Mensuel : `controle-gestion-tresorerie` (trésorerie 13 semaines, marges par dossier, balance âgée) et `fiscaliste-comptable` (clôture, échéances).
+- Domaine sans donnée : « NON RENSEIGNÉ », jamais en vert.
 
 ## Économie de tokens
-- Lire un fichier uniquement dans la partie utile ; ne pas relire un fichier déjà lu.
-- Ne pas répéter le contexte déjà établi ; ne pas redériver les faits acquis.
-- Tâches opérationnelles (mise en forme, saisie, relance) : réponse brève, résultat d'abord.
-- Analyses stratégiques, financières, juridiques : réponse complète et structurée.
-- Documents volumineux : produire un fichier, résumer en quelques lignes dans la conversation.
-- Un seul connecteur ou outil par besoin ; ne pas lister les capacités non demandées.
-
-## Équipe spécialisée (agents dans .claude/agents/)
-Équipe dédiée aux dossiers du DG : juriste-ohada, fiscaliste-comptable, analyste-financier, expert-minier, due-diligence, commercial-negociation, rh-social, redacteur-documentaire, relecteur-verificateur, controle-gestion-tresorerie, marketing-communication, achats-logistique-operations, pilotage-direction. La session principale coordonne ; chaque agent n'intervient que dans son périmètre.
-
-### Circuit obligatoire
-1. Tout document juridique ou contractuel est rédigé ou revu par `juriste-ohada`. Aucune exception.
-2. Tout document produit (juridique, financier, technique, commercial) passe ensuite par `relecteur-verificateur` avant remise au DG.
-3. Le rapport du relecteur est joint au livrable ; les anomalies non corrigées sont signalées au DG.
-4. Toute contrepartie ou tout dossier non vérifié passe par `due-diligence` avant analyse.
-5. Contrats, structuration capitalistique et chiffrages engageants : validation par l'avocat cabinet, puis décision du DG. Les agents ne remplacent ni l'avocat ni l'expert-comptable.
-6. Aucune référence légale, aucun chiffre ni aucune source inventés : « À VÉRIFIER » à défaut.
-
-### Pilotage du DG
-- Revue hebdomadaire (lundi) : `pilotage-direction` consolide un tableau de bord d'une page à partir des données fournies ; le relecteur le contrôle.
-- Revue mensuelle : `controle-gestion-tresorerie` (trésorerie à 13 semaines, marges par dossier, balance âgée) et `fiscaliste-comptable` (clôture, échéances fiscales et sociales).
-- Un domaine sans donnée est affiché « NON RENSEIGNÉ », jamais en vert.
+- Lire un fichier uniquement dans la partie utile ; ne pas relire ni redériver l'acquis.
+- Tâches opérationnelles : réponse brève, résultat d'abord. Analyses stratégiques, financières, juridiques : réponse complète.
+- Documents volumineux : produire un fichier, résumer en quelques lignes.
+- Un seul outil ou connecteur par besoin.
