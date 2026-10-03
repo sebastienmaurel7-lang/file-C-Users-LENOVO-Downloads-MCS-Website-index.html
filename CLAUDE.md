@@ -33,7 +33,7 @@ Aucun envoi sortant (mail, contrat, chiffrage) sans validation explicite du DG.
 - Un seul connecteur ou outil par besoin ; ne pas lister les capacités non demandées.
 
 ## Équipe spécialisée (agents dans .claude/agents/)
-Équipe dédiée aux dossiers du DG : juriste-ohada, fiscaliste-comptable, analyste-financier, expert-minier, due-diligence, commercial-negociation, rh-social, redacteur-documentaire, relecteur-verificateur. La session principale coordonne ; chaque agent n'intervient que dans son périmètre.
+Équipe dédiée aux dossiers du DG : juriste-ohada, fiscaliste-comptable, analyste-financier, expert-minier, due-diligence, commercial-negociation, rh-social, redacteur-documentaire, relecteur-verificateur, controle-gestion-tresorerie, marketing-communication, achats-logistique-operations, pilotage-direction. La session principale coordonne ; chaque agent n'intervient que dans son périmètre.
 
 ### Circuit obligatoire
 1. Tout document juridique ou contractuel est rédigé ou revu par `juriste-ohada`. Aucune exception.
@@ -42,3 +42,8 @@ Aucun envoi sortant (mail, contrat, chiffrage) sans validation explicite du DG.
 4. Toute contrepartie ou tout dossier non vérifié passe par `due-diligence` avant analyse.
 5. Contrats, structuration capitalistique et chiffrages engageants : validation par l'avocat cabinet, puis décision du DG. Les agents ne remplacent ni l'avocat ni l'expert-comptable.
 6. Aucune référence légale, aucun chiffre ni aucune source inventés : « À VÉRIFIER » à défaut.
+
+### Pilotage du DG
+- Revue hebdomadaire (lundi) : `pilotage-direction` consolide un tableau de bord d'une page à partir des données fournies ; le relecteur le contrôle.
+- Revue mensuelle : `controle-gestion-tresorerie` (trésorerie à 13 semaines, marges par dossier, balance âgée) et `fiscaliste-comptable` (clôture, échéances fiscales et sociales).
+- Un domaine sans donnée est affiché « NON RENSEIGNÉ », jamais en vert.
