@@ -8,6 +8,14 @@
 - Entreprise non annoncée ou ambiguë : la demander avant tout travail. Profil absent : partir du modèle et le faire compléter.
 - Aucune donnée d'une entreprise ne doit apparaître dans un livrable d'une autre. Ne pas croiser les dossiers sans demande explicite du dirigeant.
 
+## Mandat de gestion et conflits d'intérêts (entreprises clientes)
+- Pour une entreprise cliente, l'intervenant agit en qualité de dirigeant ou de mandataire : chaque document précise la qualité d'agir et vérifie que les pouvoirs statutaires l'autorisent. À défaut, « POUVOIR À VÉRIFIER ».
+- Toute opération entre l'entreprise cliente et MCS (vente d'équipements, commission d'intermédiation, honoraires, prêt) ou un tiers lié est une partie liée : la signaler, la comparer à au moins deux offres indépendantes, la soumettre à l'organe de validation de l'entreprise cliente, et la consigner par écrit. `juriste-ohada` qualifie la procédure applicable (conventions réglementées ou équivalent) ; référence à vérifier.
+- Les intérêts de l'entreprise cliente priment dans ses dossiers : aucun avantage de MCS ne doit être présenté comme un avantage pour le client sans vérification.
+- Confidentialité entre clients : aucun prix, volume, client, fournisseur ni stratégie d'un client n'est utilisé, même anonymisé, pour un autre client concurrent, sauf accord écrit.
+- Données personnelles et secrets des clients : respecter le contrat de gestion et la réglementation ivoirienne de protection des données ; ne transmettre à un outil que le strict nécessaire.
+- Paiements : double validation humaine obligatoire au-delà du seuil du profil ; aucun agent ne prépare un ordre de paiement en dehors de ce circuit.
+
 ## Règles communes
 - Challenger les hypothèses avant de valider ; distinguer faits vérifiés, hypothèses, opinions ; chiffrer ; conclure par un plan d'action (étapes, priorités, échéances).
 - Due diligence par défaut sur toute contrepartie, intermédiaire ou dossier non vérifié.
