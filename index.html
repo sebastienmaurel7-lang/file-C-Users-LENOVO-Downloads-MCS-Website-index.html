@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La carrière mixte — MCS</title>
+<meta name="description" content="La carrière mixte : faire entrer l'or artisanal et semi-industriel dans le circuit officiel en Côte d'Ivoire. Projet porté par Mines et Carrières Services, Abidjan.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root {
+    --nuit: #1E3A5F;
+    --nuit-fonce: #152a45;
+    --jaune: #F7C948;
+    --noir: #000000;
+    --blanc: #FAFAF5;
+    --pur: #FFFFFF;
+    --gris: #5b6675;
+    --trait: #d9dee5;
+    --voile: #eef1f5;
+    --max: 1180px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0;
+    background: var(--blanc);
+    color: var(--noir);
+    font-family: Arial, "Liberation Sans", Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--nuit); }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  /* Navigation */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--nuit); color: var(--blanc);
+    border-bottom: 3px solid var(--jaune);
+  }
+  .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 12px; color: var(--blanc); text-decoration: none; font-weight: 700; letter-spacing: .04em; }
+  .brand-mark { width: 38px; height: 38px; border: 2px solid var(--jaune); display: grid; place-items: center; font-size: 13px; color: var(--jaune); }
+  .brand small { display: block; font-weight: 400; font-size: 11px; letter-spacing: .12em; opacity: .75; }
+  .nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; }
+  .nav ul a { color: var(--blanc); text-decoration: none; font-size: 14px; opacity: .85; }
+  .nav ul a:hover { opacity: 1; color: var(--jaune); }
+  .burger { display: none; background: none; border: 1px solid rgba(250,250,245,.4); color: var(--blanc); font-size: 14px; padding: 8px 12px; cursor: pointer; font-family: inherit; }
+
+  /* Hero */
+  .hero {
+    position: relative; min-height: 88vh; display: flex; align-items: flex-end;
+    color: var(--blanc);
+    background: var(--nuit-fonce) url("assets/img/graviere-aerienne.jpg") center/cover no-repeat;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(21,42,69,.35) 0%, rgba(21,42,69,.75) 55%, rgba(21,42,69,.96) 100%);
+  }
+  .hero .wrap { position: relative; padding-top: 120px; padding-bottom: 72px; }
+  .kicker { color: var(--jaune); text-transform: uppercase; letter-spacing: .18em; font-size: 13px; font-weight: 700; margin: 0 0 14px; }
+  .hero h1 { font-size: clamp(42px, 7vw, 84px); line-height: 1.02; margin: 0 0 18px; letter-spacing: -.01em; }
+  .hero .lead { font-size: clamp(19px, 2.4vw, 26px); max-width: 820px; margin: 0 0 28px; }
+  .devise { border-left: 4px solid var(--jaune); padding: 6px 0 6px 18px; font-size: 18px; max-width: 760px; margin: 0 0 34px; }
+  .devise span { display: block; }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-block; padding: 14px 24px; font-weight: 700; text-decoration: none; font-size: 15px; letter-spacing: .02em; }
+  .btn-or { background: var(--jaune); color: var(--noir); }
+  .btn-ligne { border: 2px solid var(--blanc); color: var(--blanc); }
+  .btn:hover { filter: brightness(1.06); }
+
+  /* Chiffres */
+  .chiffres { background: var(--nuit); color: var(--blanc); }
+  .chiffres .wrap { display: grid; grid-template-columns: repeat(6, 1fr); }
+  .chiffre { padding: 30px 18px; border-left: 1px solid rgba(250,250,245,.14); }
+  .chiffre:first-child { border-left: 0; }
+  .chiffre b { display: block; font-size: 34px; line-height: 1.1; color: var(--jaune); }
+  .chiffre span { font-size: 14px; opacity: .85; display: block; margin-top: 6px; }
+
+  /* Sections */
+  section.bloc { padding: 96px 0; }
+  section.bloc.alt { background: var(--pur); }
+  section.bloc.sombre { background: var(--nuit); color: var(--blanc); }
+  section.bloc.sombre a { color: var(--jaune); }
+  .num { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--gris); font-weight: 700; display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .num::before { content: ""; width: 34px; height: 4px; background: var(--jaune); display: inline-block; }
+  .sombre .num { color: rgba(250,250,245,.7); }
+  h2 { font-size: clamp(30px, 4vw, 46px); line-height: 1.1; margin: 0 0 18px; color: var(--nuit); }
+  .sombre h2 { color: var(--blanc); }
+  h3 { font-size: 21px; color: var(--nuit); margin: 0 0 10px; }
+  .sombre h3 { color: var(--jaune); }
+  .intro { font-size: 20px; max-width: 860px; margin: 0 0 42px; color: #1b2430; }
+  .sombre .intro { color: rgba(250,250,245,.9); }
+  .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .g5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .carte { background: var(--pur); border: 1px solid var(--trait); border-top: 4px solid var(--nuit); padding: 26px; }
+  .alt .carte { background: var(--blanc); }
+  .sombre .carte { background: rgba(250,250,245,.05); border-color: rgba(250,250,245,.15); border-top-color: var(--jaune); }
+  .carte p { margin: 0; }
+  .carte .n { font-size: 40px; font-weight: 700; color: var(--jaune); line-height: 1; display: block; margin-bottom: 10px; }
+  .carte.or { border-top-color: var(--jaune); }
+
+  ul.puces { padding: 0; margin: 0; list-style: none; }
+  ul.puces li { padding: 8px 0 8px 22px; position: relative; border-bottom: 1px solid var(--trait); }
+  ul.puces li:last-child { border-bottom: 0; }
+  ul.puces li::before { content: ""; position: absolute; left: 0; top: 18px; width: 9px; height: 9px; background: var(--jaune); }
+  .sombre ul.puces li { border-color: rgba(250,250,245,.14); }
+
+  figure { margin: 0; }
+  figcaption { font-size: 13px; color: var(--gris); margin-top: 8px; }
+  .sombre figcaption { color: rgba(250,250,245,.65); }
+  .photo { aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+  .mosaique { display: grid; grid-template-columns: 1.1fr 1fr; grid-template-rows: 1fr 1fr; gap: 12px; }
+  .mosaique figure:first-child { grid-row: 1 / span 2; }
+  .mosaique img { width: 100%; height: 100%; object-fit: cover; min-height: 200px; }
+  .mosaique figure { position: relative; }
+  .mosaique figcaption { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: 10px 12px; color: var(--blanc); background: linear-gradient(transparent, rgba(0,0,0,.75)); }
+
+  /* Tables */
+  .tab { width: 100%; border-collapse: collapse; font-size: 15px; background: var(--pur); }
+  .tab th { background: var(--nuit); color: var(--blanc); text-align: left; padding: 12px 14px; font-weight: 700; font-size: 14px; }
+  .tab td { padding: 12px 14px; border-bottom: 1px solid var(--trait); vertical-align: top; }
+  .tab tr:nth-child(even) td { background: #f6f7f9; }
+  .tab td:first-child { font-weight: 700; color: var(--nuit); }
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--trait); }
+  .sombre .tab td { color: var(--noir); }
+  .note { font-size: 14px; color: var(--gris); margin-top: 12px; font-style: italic; }
+  .sombre .note { color: rgba(250,250,245,.65); }
+
+  .encadre { background: var(--jaune); color: var(--noir); padding: 26px 30px; font-size: 19px; font-weight: 700; margin: 40px 0 0; }
+  .encadre.nuit { background: var(--nuit); color: var(--blanc); font-weight: 400; }
+  .encadre.nuit strong { color: var(--jaune); }
+
+  /* Parcours */
+  .parcours { display: grid; grid-template-columns: repeat(5, 1fr); counter-reset: etape; position: relative; }
+  .etape { padding: 0 14px 0 0; position: relative; }
+  .etape::before {
+    counter-increment: etape; content: counter(etape);
+    display: grid; place-items: center; width: 52px; height: 52px; background: var(--nuit); color: var(--jaune);
+    font-weight: 700; font-size: 22px; margin-bottom: 16px; position: relative; z-index: 1;
+  }
+  .etape::after { content: ""; position: absolute; top: 25px; left: 52px; right: 0; height: 2px; background: var(--jaune); }
+  .etape:last-child::after { display: none; }
+  .etape h3 { font-size: 18px; }
+  .etape p { font-size: 15px; margin: 0; color: #2a3340; }
+
+  /* Barres de partage */
+  .partage { display: flex; height: 54px; width: 100%; margin: 18px 0 8px; border: 1px solid var(--trait); }
+  .partage div { display: grid; place-items: center; font-size: 13px; font-weight: 700; overflow: hidden; white-space: nowrap; }
+  .legende { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; }
+  .legende i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; vertical-align: -1px; }
+
+  /* Schémas */
+  .schema { background: var(--pur); border: 1px solid var(--trait); padding: 16px; }
+  .schema img { width: 100%; height: auto; cursor: zoom-in; }
+
+  /* Onglets */
+  .onglets { display: flex; flex-wrap: wrap; gap: 0; border-bottom: 2px solid var(--nuit); margin-bottom: 24px; }
+  .onglets button {
+    background: none; border: 0; padding: 12px 18px; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; color: var(--gris);
+    border-bottom: 4px solid transparent; margin-bottom: -2px;
+  }
+  .onglets button[aria-selected="true"] { color: var(--nuit); border-bottom-color: var(--jaune); }
+  .panneau[hidden] { display: none; }
+
+  /* Phases */
+  .phases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .phase { background: var(--pur); border: 1px solid var(--trait); padding: 20px; }
+  .phase .p { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--gris); font-weight: 700; }
+  .phase h3 { margin: 6px 0 10px; font-size: 19px; }
+  .phase ul { margin: 0; padding-left: 18px; font-size: 15px; }
+  .phase.p1 { border-top: 6px solid var(--jaune); }
+  .phase.p2 { border-top: 6px solid var(--nuit); }
+  .phase.p3 { border-top: 6px solid #4f6684; }
+  .phase.p4 { border-top: 6px solid #9aa8ba; }
+
+  /* Démarche */
+  .frise { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; }
+  .frise > div { padding: 22px 18px; border-left: 4px solid var(--jaune); background: rgba(250,250,245,.05); margin-right: 8px; }
+  .frise .e { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--jaune); font-weight: 700; }
+  .frise h3 { color: var(--blanc); font-size: 18px; margin: 6px 0 8px; }
+  .frise p { font-size: 14px; margin: 0 0 10px; color: rgba(250,250,245,.85); }
+  .frise .cond { font-size: 13px; border-top: 1px solid rgba(250,250,245,.2); padding-top: 10px; color: rgba(250,250,245,.7); margin: 0; }
+
+  details.risque { background: var(--pur); border: 1px solid var(--trait); margin-bottom: 8px; }
+  details.risque summary { padding: 14px 18px; cursor: pointer; font-weight: 700; color: var(--nuit); list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  details.risque summary::-webkit-details-marker { display: none; }
+  details.risque summary em { font-style: normal; font-weight: 400; font-size: 13px; color: var(--gris); white-space: nowrap; }
+  details.risque p { margin: 0; padding: 0 18px 16px; color: #2a3340; }
+
+  /* Contact */
+  .contact { background: var(--jaune); color: var(--noir); padding: 80px 0; }
+  .contact h2 { color: var(--noir); }
+  .contact .num { color: var(--noir); }
+  .contact .num::before { background: var(--noir); }
+  .contact .tab th { background: var(--noir); }
+
+  footer { background: var(--noir); color: rgba(250,250,245,.75); padding: 36px 0; font-size: 13px; }
+  footer strong { color: var(--blanc); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; }
+
+  /* Visionneuse */
+  .lb { position: fixed; inset: 0; background: rgba(0,0,0,.9); display: none; align-items: center; justify-content: center; z-index: 100; padding: 20px; cursor: zoom-out; }
+  .lb.ouvert { display: flex; }
+  .lb img { max-height: 94vh; max-width: 96vw; background: var(--pur); }
+
+  @media (max-width: 1000px) {
+    .chiffres .wrap { grid-template-columns: repeat(3, 1fr); }
+    .chiffre:nth-child(4) { border-left: 0; }
+    .g4, .g5, .phases { grid-template-columns: repeat(2, 1fr); }
+    .g3 { grid-template-columns: 1fr 1fr; }
+    .parcours, .frise { grid-template-columns: 1fr; gap: 14px; }
+    .etape::after { display: none; }
+    .etape { display: grid; grid-template-columns: 52px 1fr; column-gap: 16px; }
+    .etape::before { grid-row: 1 / span 2; margin: 0; }
+    .frise > div { margin-right: 0; }
+  }
+  @media (max-width: 860px) {
+    .nav ul { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--nuit); flex-direction: column; gap: 0; padding: 8px 0; border-bottom: 3px solid var(--jaune); }
+    .nav ul.ouvert { display: flex; }
+    .nav ul a { display: block; padding: 12px 24px; }
+    .burger { display: block; }
+    .g2 { grid-template-columns: 1fr; gap: 32px; }
+  }
+  @media (max-width: 620px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 16px; }
+    section.bloc { padding: 64px 0; }
+    .chiffres .wrap { grid-template-columns: 1fr 1fr; }
+    .chiffre { border-left: 0; border-top: 1px solid rgba(250,250,245,.14); padding: 20px 8px; }
+    .chiffre b { font-size: 28px; }
+    .g3, .g4, .g5, .phases { grid-template-columns: 1fr; }
+    .mosaique { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .mosaique figure:first-child { grid-row: auto; }
+    .partage div { font-size: 0; }
+    .hero { min-height: 92vh; }
+  }
+  @media print {
+    .nav, .burger, .lb { display: none !important; }
+    .hero { min-height: auto; }
+    section.bloc { padding: 32px 0; break-inside: avoid-page; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Navigation principale">
+  <div class="wrap">
+    <a class="brand" href="#haut">
+      <span class="brand-mark">MCS</span>
+      <span>LA CARRIÈRE MIXTE<small>MINES ET CARRIÈRES SERVICES</small></span>
+    </a>
+    <button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul id="menu">
+      <li><a href="#constat">Constat</a></li>
+      <li><a href="#dispositif">Dispositif</a></li>
+      <li><a href="#alepe">Alépé</a></li>
+      <li><a href="#centres">Centres régionaux</a></li>
+      <li><a href="#orpailleurs">Orpailleurs</a></li>
+      <li><a href="#gouvernance">Gouvernance</a></li>
+      <li><a href="#demarche">Démarche</a></li>
+      <li><a href="#proposition">Proposition</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="haut">
+  <div class="wrap">
+    <p class="kicker">Côte d'Ivoire · Document de concept · Version 7 · Octobre 2026</p>
+    <h1>La carrière mixte</h1>
+    <p class="lead">Faire entrer l'or artisanal et semi-industriel dans le circuit officiel : sans mercure, tracé lot par lot, payé le jour même.</p>
+    <p class="devise">
+      <span>Le granulat bancarise le site.</span>
+      <span>L'or rémunère les hommes.</span>
+      <span>L'école les qualifie.</span>
+    </p>
+    <div class="btns">
+      <a class="btn btn-or" href="#dispositif">Découvrir le dispositif</a>
+      <a class="btn btn-ligne" href="#proposition">Ce que nous proposons</a>
+    </div>
+  </div>
+</header>
+
+<div class="chiffres" aria-label="Chiffres clés">
+  <div class="wrap">
+    <div class="chiffre"><b>≈ 10 t</b><span>d'or par an livrées à l'unité nationale d'affinage, à terme</span></div>
+    <div class="chiffre"><b>20 000</b><span>orpailleurs formés en 10 ans, soit ≈ 2 000 par an</span></div>
+    <div class="chiffre"><b>× 2,4</b><span>revenu visé de l'orpailleur, à effort égal (× 1,8 si récupération à 50 %)</span></div>
+    <div class="chiffre"><b>75 %</b><span>de la valeur estimée du lot payés le jour du dépôt</span></div>
+    <div class="chiffre"><b>0</b><span>mercure, cyanure ou fusion dans le dispositif</span></div>
+    <div class="chiffre"><b>0 FCFA</b><span>de dépense budgétaire : le dispositif se finance lui-même</span></div>
+  </div>
+</div>
+
+<!-- 1. Constat -->
+<section class="bloc" id="constat">
+  <div class="wrap">
+    <div class="num">01 · Le constat</div>
+    <h2>Un demi-million de personnes vivent de l'or, presque entièrement hors du circuit officiel</h2>
+    <p class="intro">L'orpaillage récupère mal l'or, le vend mal, empoisonne l'eau au mercure et échappe presque entièrement à l'État. En septembre 2026, l'État a choisi de durcir la répression tout en construisant les circuits officiels d'achat et d'affinage.</p>
+
+    <div class="g2">
+      <div class="mosaique">
+        <figure>
+          <img src="assets/img/site-clandestin.jpg" alt="Site d'orpaillage clandestin : puits, tuyaux et sacs de minerai à perte de vue" loading="lazy">
+          <figcaption>Puits profonds sans soutènement</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/fosses-orpaillage.jpg" alt="Fosses d'orpaillage abandonnées remplies d'eau boueuse" loading="lazy">
+          <figcaption>Fosses abandonnées, terres non réhabilitées</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/orpailleuse-riviere.jpg" alt="Orpailleuse lavant du gravier dans une rivière" loading="lazy">
+          <figcaption>Lavage en rivière</figcaption>
+        </figure>
+      </div>
+      <div>
+        <div class="scroll">
+          <table class="tab">
+            <thead><tr><th>Indicateur</th><th>Ordre de grandeur</th></tr></thead>
+            <tbody>
+              <tr><td>Personnes vivant de l'orpaillage</td><td>Près d'un demi-million, dans 24 régions sur 31 ; une large majorité a moins de 35 ans</td></tr>
+              <tr><td>Sites clandestins actifs</td><td>≈ 800 en 2023, plus de 1 600 en mai 2026</td></tr>
+              <tr><td>Production artisanale non déclarée</td><td>De l'ordre de 20 t/an (reconstitution, non mesurée)</td></tr>
+              <tr><td>Or sorti en contrebande</td><td>30 à 40 t/an selon SWISSAID (inclut vraisemblablement de l'or en transit)</td></tr>
+              <tr><td>Mercure consommé</td><td>De l'ordre de 10 t/an</td></tr>
+              <tr><td>Or intercepté</td><td>≈ 136 kg saisis depuis 2021</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Sources publiques hétérogènes, parfois contradictoires : ordres de grandeur, non des mesures.</p>
+      </div>
+    </div>
+
+    <div class="g3" style="margin-top:48px">
+      <div class="carte">
+        <h3>Ce que perd l'orpailleur</h3>
+        <ul class="puces">
+          <li>Il récupère ≈ un tiers de l'or contenu ; l'or fin part au rejet</li>
+          <li>Il vend sous le cours, à des acheteurs informels</li>
+          <li>Il dépend du financeur, du propriétaire du trou et de l'acheteur</li>
+          <li>Il expose sa santé : mercure, effondrements, noyades</li>
+          <li>Il reste hors du droit : ni statut, ni crédit, ni recours</li>
+        </ul>
+      </div>
+      <div class="carte">
+        <h3>Ce que perdent l'État et le territoire</h3>
+        <ul class="puces">
+          <li>L'or échappe à la fiscalité et aux statistiques</li>
+          <li>Le mercure contamine rivières, sols et chaîne alimentaire</li>
+          <li>Les sites abandonnés ne sont pas réhabilités</li>
+          <li>Les gravières voisines rejettent l'or de leurs eaux de lavage</li>
+        </ul>
+      </div>
+      <div class="carte or">
+        <h3>Le contexte de septembre 2026</h3>
+        <ul class="puces">
+          <li>16 sept. : unité nationale d'affinage ≈ 100 t/an annoncée à Abidjan pour 2027</li>
+          <li>17 sept. : moratoire de six mois sur les autorisations artisanales et semi-industrielles</li>
+          <li>21 pelotons de sécurité fluviale ; loi aggravant les sanctions en préparation</li>
+          <li>Plus de 8 500 sites démantelés depuis 2021, 4 474 personnes déférées</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="encadre nuit"><strong>La répression seule ne suffit pas.</strong> Il faut aussi que la voie légale soit la plus rémunératrice pour l'orpailleur, et que l'or soit suivi jusqu'à son acheteur. La carrière mixte ne concurrence pas la lutte contre l'orpaillage illégal : elle fournit aux circuits officiels l'amont qui leur manque.</div>
+  </div>
+</section>
+
+<!-- 2. Dispositif -->
+<section class="bloc alt" id="dispositif">
+  <div class="wrap">
+    <div class="num">02 · Le dispositif en bref</div>
+    <h2>Formation, crédit et conseil, en échange d'un or tracé vendu à l'État</h2>
+    <p class="intro">Les titulaires d'autorisations reçoivent formation, accès au crédit et conseil technique. En échange, leur or passe par un centre régional de la société nationale des métaux précieux, qui le pèse devant eux, le titre et l'achète pour le compte de l'État, en payant le jour même.</p>
+
+    <div class="g3">
+      <div class="carte or"><span class="n">1</span><h3>Payer vite, payer chacun directement</h3><p>Avance de 75 % sur la carte de chaque membre le jour du dépôt ; trois jours plus tard, paiement direct de chaque bénéficiaire : membres, coopérative, État, banque, détenteurs coutumiers. Personne ne peut capter la part d'un autre.</p></div>
+      <div class="carte or"><span class="n">2</span><h3>Se financer soi-même, sans budget</h3><p>La société nationale finance ses centres sur sa décote ; une contribution de filière de 0,5 à 0,6 % du cours finance la formation, le contrôle et le soutien à la filière. Le service est gratuit pour les titulaires.</p></div>
+      <div class="carte or"><span class="n">3</span><h3>Décider à deux, se corriger seul</h3><p>Conseil national paritaire État–profession à double majorité ; indicateurs publiés chaque mois ; ajustements automatiques écrits à l'avance.</p></div>
+    </div>
+
+    <h3 style="margin-top:56px">Trois niveaux, deux types d'installations à ne pas confondre</h3>
+    <div class="scroll">
+      <table class="tab">
+        <thead><tr><th>Niveau</th><th>Où</th><th>Rôle</th></tr></thead>
+        <tbody>
+          <tr><td>Chantiers des titulaires</td><td>Autorisations artisanales (AEA) et semi-industrielles (AESI)</td><td>Extraction et pré-concentration sans mercure ; concentrés placés sous scellé. Aucun or n'est extrait sur le chantier.</td></tr>
+          <tr><td>Centres régionaux</td><td>Villes relais des bassins aurifères : Bocanda, Yamoussoukro, Bouaké, Adzopé, puis Soubré, M'Bahiakro, Bondoukou et le nord</td><td>Antennes de la société nationale : réception, test mercure, traitement gravimétrique, pesée, titrage, achat et paiement ; antenne de maintenance</td></tr>
+          <tr><td>Alépé, cœur du dispositif</td><td>Basse Comoé, ≈ 45 km d'Abidjan ; un seul site</td><td>Formation, certification, démonstration, centrale d'achat, maintenance, appui au crédit ; traitement du tout-venant des coopératives voisines ; granulats</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:56px">Deux filières, présentées séparément parce que leurs besoins diffèrent</h3>
+    <div class="scroll">
+      <table class="tab">
+        <thead><tr><th></th><th>Filière artisanale — la priorité</th><th>Filière semi-industrielle — les volumes</th></tr></thead>
+        <tbody>
+          <tr><td>Autorisations d'or valides</td><td>212, plus 152 en renouvellement</td><td>480</td></tr>
+          <tr><td>Surface</td><td>Jusqu'à 25 ha</td><td>25 à 100 ha</td></tr>
+          <tr><td>Interlocuteur du centre</td><td>La coopérative uniquement, jamais l'orpailleur individuel</td><td>La société titulaire</td></tr>
+          <tr><td>Équipement</td><td>Peu ou pas ; lavage souvent au mercure</td><td>Beaucoup non équipées ; équipement en crédit-bail</td></tr>
+          <tr><td>Ce qui arrive au centre</td><td colspan="2">Des concentrés sous scellé, préparés sans mercure sur le chantier — matériaux meubles uniquement (alluvions, latérites meubles, saprolites tendres)</td></tr>
+          <tr><td>Coût du service</td><td colspan="2">Aucun : centres financés par la société nationale</td></tr>
+          <tr><td>Régime</td><td colspan="2">Volontaire pendant le pilote ; obligatoire ensuite si l'État le décide</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:56px">Une chaîne où chaque maillon rend le suivant possible</h3>
+    <div class="g5" id="chaine">
+      <div class="carte"><h3>Formation</h3><p>Procédés sans mercure, sécurité, gestion ; certification auditable</p></div>
+      <div class="carte"><h3>Traçabilité</h3><p>Conteneur scellé par site, bordereau de lot, pesée contradictoire, suivi satellitaire</p></div>
+      <div class="carte"><h3>Paiement</h3><p>Avance au dépôt puis paiement éclaté sur la carte de chaque membre</p></div>
+      <div class="carte"><h3>Crédit</h3><p>Crédit-bail remboursé à la source ; fonds de garantie des bailleurs</p></div>
+      <div class="carte"><h3>Matériel & conseil</h3><p>Diagnostic, maintenance, meilleure récupération</p></div>
+    </div>
+    <div class="encadre">Les banques prêtent parce que la production est vue et le remboursement pris à la source ; les titulaires entrent parce qu'ils y trouvent matériel, compétences et meilleur prix ; l'État obtient l'or et la traçabilité.</div>
+  </div>
+</section>
+
+<!-- 3. Alépé -->
+<section class="bloc" id="alepe">
+  <div class="wrap">
+    <div class="num">03 · Alépé, cœur du dispositif</div>
+    <h2>Une gravière qui porte une école</h2>
+    <p class="intro">À environ 45 km d'Abidjan, sur une terrasse alluviale de la Comoé : une exploitation de granulats alluvionnaires pour le BTP du Grand Abidjan, socle économique d'un centre de formation de référence aux métiers de la petite mine et des carrières. Alépé n'est pas un centre régional et ne reçoit pas de concentrés.</p>
+
+    <div class="g2">
+      <div>
+        <h3>La géologie qui rend la carrière mixte possible</h3>
+        <p>Dans une terrasse alluvionnaire, le courant a trié les matériaux : les éléments tendres sont partis, le quartz roulé est resté. L'or, plus de sept fois plus dense que le quartz, a migré vers le bas et s'est concentré au contact du socle. <strong>La couche de base est à la fois le granulat le plus propre du gisement et sa couche la plus aurifère.</strong></p>
+        <p>Aujourd'hui, la gravière rejette l'or avec ses eaux de lavage ; l'orpailleur abandonne le granulat après en avoir tiré l'or au mercure. La carrière mixte traite cette ressource une seule fois et en tire les deux produits.</p>
+        <h3 style="margin-top:28px">L'exploitation de granulats</h3>
+        <ul class="puces">
+          <li><strong>Du haut vers le bas</strong> : découverte mise de côté, sables et graviers vendus au fur et à mesure, gravier de base atteint en dernier</li>
+          <li><strong>Par parcelles successives</strong> de 50 ha / 4 ans, chacune réhabilitée dès épuisement</li>
+          <li><strong>Sans explosif</strong> : concassage-criblage des galets en graviers concassés</li>
+          <li><strong>Vente départ carrière</strong> dans un rayon économique de ≈ 60 km</li>
+          <li><strong>Rien n'est un déchet</strong> : fines → briques de terre comprimée ; parcelles → agriculture, pisciculture</li>
+        </ul>
+      </div>
+      <figure>
+        <img class="photo" src="assets/img/traitement-gravimetrique.jpg" alt="Installation de traitement gravimétrique : trommel, sluice et tables de lavage" loading="lazy">
+        <figcaption>Ligne de traitement gravimétrique (photo d'illustration) : débourbage, criblage, sluice — sans mercure.</figcaption>
+      </figure>
+    </div>
+
+    <div class="g2" style="margin-top:56px">
+      <div class="schema">
+        <img src="assets/schemas/flowsheet_alepe.svg" alt="Schéma 1 — La carrière mixte d'Alépé : deux flux de tout-venant qui ne se croisent jamais" loading="lazy" data-zoom>
+        <figcaption>Schéma 1 — Deux flux de tout-venant qui ne se croisent jamais, convergeant vers un seul poste de finition utilisé en campagnes alternées. Cliquer pour agrandir.</figcaption>
+      </div>
+      <div>
+        <h3>Le traitement du tout-venant des coopératives voisines</h3>
+        <p>Seul endroit du dispositif où des coopératives livrent leur tout-venant brut. Capacité visée : <strong>deux modules de 60 t/h</strong>, sans mercure, sans cyanure, sans fusion.</p>
+        <ul class="puces">
+          <li><strong>Module alluvions</strong> : débourbage, criblage, jig pour l'or grossier, concentrateurs centrifuges pour l'or fin, table à secousses, séparation magnétique</li>
+          <li><strong>Module latérites et saprolites</strong> : délitage intensif, concentration centrifuge, table à secousses ; latérite cuirassée non admise</li>
+          <li><strong>Poste de finition commun</strong>, en campagnes alternées avec purge complète et bilan matière contradictoire : le point le plus contrôlé du site</li>
+          <li>Eaux en circuit fermé ; service rémunéré par le fonds de filière à ≈ 5 % de l'or récupéré</li>
+        </ul>
+        <p class="note">Investissement conditionné à l'approvisionnement : unité pilote de 10 à 20 t/h, puis un module de 60 t/h sur apports contractualisés, le second si les volumes le confirment. La teneur du gravier de base n'entre dans aucune projection tant qu'elle n'est pas mesurée.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:56px">Le centre de formation et d'appui</h3>
+    <div class="g4">
+      <div class="carte"><h3>Orpailleurs et coopératives</h3><p>Formation de base obligatoire, puis parcours par paliers. Financé par le fonds de filière et les bailleurs.</p></div>
+      <div class="carte"><h3>Personnel semi-industriel</h3><p>Conduite, pré-concentration, procédés, gestion, environnement. Financé par les entreprises.</p></div>
+      <div class="carte"><h3>Mécaniciens</h3><p>Maintenance des engins et installations gravimétriques, sur équipements de démonstration.</p></div>
+      <div class="carte"><h3>Jeunes</h3><p>Formation qualifiante aux métiers des mines et des carrières, avec les programmes de l'État.</p></div>
+    </div>
+    <div class="g3" style="margin-top:24px">
+      <div class="carte or"><h3>Site de démonstration</h3><p>Les équipements sont présentés en fonctionnement réel : les futurs sites les voient, s'y forment, puis s'équipent.</p></div>
+      <div class="carte or"><h3>Centrale d'achat neutre</h3><p>Portée par la fédération des coopératives — non par MCS — elle mutualise pièces d'usure et pièces détachées.</p></div>
+      <div class="carte or"><h3>Réseau de maintenance</h3><p>Mécaniciens formés à Alépé, intervenant depuis les antennes des centres régionaux.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Centres régionaux -->
+<section class="bloc alt" id="centres">
+  <div class="wrap">
+    <div class="num">04 · Les centres régionaux</div>
+    <h2>Des antennes légères de la société nationale, au plus près des bassins</h2>
+    <p class="intro">Un centre régional ne traite pas de tout-venant : il reçoit des concentrés. Il se réduit à un hangar de traitement gravimétrique, un poste de pesée, un coffre-fort certifié et une petite antenne de maintenance — ≈ 0,5 Md FCFA, un douzième de l'investissement d'Alépé.</p>
+
+    <div class="g2">
+      <div>
+        <h3>Le circuit d'un lot</h3>
+        <div class="scroll">
+          <table class="tab">
+            <thead><tr><th>Étape</th><th>Garantie</th></tr></thead>
+            <tbody>
+              <tr><td>Réception, scellé, bordereau</td><td>Chaque lot rattaché à une autorisation</td></tr>
+              <tr><td>Test de mercure</td><td>Lot contaminé refusé, titulaire suspendu</td></tr>
+              <tr><td>Traitement gravimétrique</td><td>Seul procédé admis ; aucun mélange ; purge entre titulaires</td></tr>
+              <tr><td>Pesée contradictoire</td><td>Devant le propriétaire, filmée, PV signé</td></tr>
+              <tr><td>Échantillons scellés</td><td>Titre contradictoire, contre-analyse possible</td></tr>
+              <tr><td>Coffre-fort certifié</td><td>Vidéosurveillance, assurance</td></tr>
+              <tr><td>Achat par la société nationale</td><td>75 % le jour même ; solde à J+3, payé à chaque bénéficiaire</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="puces" style="margin-top:24px">
+          <li>Direction des centres distincte de la direction commerciale, sous contrat de service avec l'État</li>
+          <li>Coût ≈ 5,2 Md FCFA/an pour dix centres en régime, soit ≈ 0,7 % de la valeur de l'or — neutre pour la société nationale</li>
+          <li>Fonds de roulement des avances ≈ 4,4 Md FCFA</li>
+          <li>Seuil de pertinence ≈ 500 kg d'or/an ; en dessous, regroupement ou antenne mobile</li>
+        </ul>
+      </div>
+      <div class="schema">
+        <img src="assets/schemas/flowsheet_centre_regional.svg" alt="Schéma 2 — Le circuit d'un lot dans un centre régional" loading="lazy" data-zoom>
+        <figcaption>Schéma 2 — Traitement, pesée contradictoire, avance le jour du dépôt, puis paiement éclaté. Cliquer pour agrandir.</figcaption>
+      </div>
+    </div>
+
+    <h3 style="margin-top:56px">Un réseau déployé par phases</h3>
+    <p>Selon le cadastre minier, trois points à moins de 50 km des autorisations couvriraient la moitié des AEA d'or du pays ; dix en couvriraient près de 80 %.</p>
+    <div class="phases">
+      <div class="phase p1"><span class="p">Phase 1</span><h3>Bocanda (N'Zi)</h3><ul><li>109 AEA d'or à moins de 50 km</li><li>Premier bassin du pays</li><li>Premier centre régional</li></ul></div>
+      <div class="phase p2"><span class="p">Phase 2</span><h3>Yamoussoukro · Bouaké · Adzopé</h3><ul><li>Bélier : 35 AEA</li><li>Gbêkê–Hambol : 37 AEA</li><li>La Mé : 22 AESI, flux surtout semi-industriel</li></ul></div>
+      <div class="phase p3"><span class="p">Phase 3</span><h3>M'Bahiakro · Soubré · Bondoukou</h3><ul><li>Iffou : 24 AEA</li><li>Nawa : 27 AEA</li><li>Gontougo : 9 AEA</li></ul></div>
+      <div class="phase p4"><span class="p">Phase 4</span><h3>Le nord</h3><ul><li>Boundiali / Korhogo : 28 AEA</li><li>Ferkessédougou / Kong : 11 AEA</li><li>Bouna : 21 AEA</li><li>Sous réserve d'analyse sécuritaire</li></ul></div>
+    </div>
+    <p class="note">Nombres d'AEA d'or à moins de 50 km des points candidats (cadastre minier, 27 septembre 2026), à recalculer par ville. Les données de production semi-industrielle pourront modifier l'ordre des phases.</p>
+  </div>
+</section>
+
+<!-- 5. Orpailleurs -->
+<section class="bloc" id="orpailleurs">
+  <div class="wrap">
+    <div class="num">05 · La filière artisanale, priorité du dispositif</div>
+    <h2>De la clandestinité au statut de titulaire équipé et certifié</h2>
+    <p class="intro">Le semi-industriel apporte les volumes ; l'artisanal porte l'essentiel des vies, des risques et de l'impact. Un dispositif qui ne réussirait que sur le semi-industriel manquerait son objet.</p>
+
+    <div class="parcours">
+      <div class="etape"><h3>Recensé</h3><p>Se fait connaître avec son site et son équipe ; identité enregistrée.</p></div>
+      <div class="etape"><h3>Formé</h3><p>Formation de base : sécurité, procédés sans mercure, pré-concentration ; carte de l'orpailleur.</p></div>
+      <div class="etape"><h3>Membre d'une coopérative</h3><p>Adhésion à une coopérative agréée, seul intermédiaire avec le centre.</p></div>
+      <div class="etape"><h3>Équipé</h3><p>Kit de pré-concentration en crédit-bail, remboursé sur les ventes d'or.</p></div>
+      <div class="etape"><h3>Certifié</h3><p>Livraisons tracées sans mercure : matériel plus important, meilleur crédit, protection sociale.</p></div>
+    </div>
+
+    <div class="g2" style="margin-top:64px">
+      <div>
+        <h3>Le partage de la valeur dans une coopérative</h3>
+        <p>Proposition de base de négociation, adoptée en assemblée générale. Chaque part est versée directement par la société nationale à son bénéficiaire.</p>
+        <div class="partage" role="img" aria-label="Répartition indicative : orpailleurs environ 62 %, détenteurs coutumiers 5 %, réserves 4 %, collectivités 2 %, protection sociale 1 %, reste État, crédit-bail, réhabilitation et frais d'exploitation environ 26 %">
+          <div style="flex:62;background:var(--jaune)">Orpailleurs ≈ 62 %</div>
+          <div style="flex:26;background:var(--nuit);color:var(--blanc)">≈ 26 %</div>
+          <div style="flex:5;background:#4f6684;color:var(--blanc)">5</div>
+          <div style="flex:4;background:#9aa8ba">4</div>
+          <div style="flex:2;background:#c9d2de">2</div>
+          <div style="flex:1;background:var(--noir)"></div>
+        </div>
+        <div class="legende">
+          <span><i style="background:var(--jaune)"></i>Orpailleurs membres (solde)</span>
+          <span><i style="background:var(--nuit)"></i>État, crédit-bail, réhabilitation, frais d'exploitation</span>
+          <span><i style="background:#4f6684"></i>Détenteurs coutumiers</span>
+          <span><i style="background:#9aa8ba"></i>Réserves de la coopérative</span>
+          <span><i style="background:#c9d2de"></i>Collectivités</span>
+          <span><i style="background:var(--noir)"></i>Protection sociale</span>
+        </div>
+        <p class="note">Ordre de prélèvement : 0. État (redevance et taxes) · 1. crédit-bail · 2. fonds de réhabilitation · 3. frais d'exploitation · 4 à 7. coutumiers, collectivités, protection, réserves · 8. orpailleurs. La part « ≈ 26 % » est déduite par différence.</p>
+      </div>
+      <div>
+        <h3>Ce que gagne l'orpailleur</h3>
+        <div class="g2" style="gap:16px;grid-template-columns:1fr 1fr">
+          <div class="carte or"><span class="n">60–80 %</span><p>de l'or récupéré visé, contre ≈ un tiers aujourd'hui (à confirmer par les essais)</p></div>
+          <div class="carte or"><span class="n">500–600 k</span><p>FCFA par mois de revenu visé ; plancher de 150 000 FCFA garanti par les réserves</p></div>
+          <div class="carte or"><span class="n">≈ 340 k</span><p>FCFA d'épargne après un an (5 % par défaut, retirable)</p></div>
+          <div class="carte or"><span class="n">≈ 6,5 k</span><p>FCFA par mois pour maladie, accidents et mutuelle</p></div>
+        </div>
+        <p class="note">Hypothèse de productivité : 11 à 13 g d'or par mois et par orpailleur, soit 0,5 à 0,6 t de tout-venant par jour à 1,5 g/t ; à recaler sur les essais et l'enquête de terrain. Au-delà de 600 000 FCFA, surplus partagé 30 % orpailleur / 40 % coopérative / 30 % fonds de filière.</p>
+      </div>
+    </div>
+
+    <div class="g3" style="margin-top:48px">
+      <div class="carte"><h3>Sur le chantier</h3><p>Plus de puits profonds. Pré-concentration sans mercure (débourbage, sluice ou jig, concentrateur centrifuge). Ni battée, ni amalgamation, ni fusion : le concentré part sous scellé.</p></div>
+      <div class="carte"><h3>Garde-fous de collecte</h3><p>Conteneurs numérotés fournis par le centre ; tournées déclarées à l'avance ; masse livrée rapprochée de la production déclarée et de la capacité du matériel. Chaque membre est informé directement de chaque lot.</p></div>
+      <div class="carte"><h3>Engagements sociaux</h3><p>Aucun travailleur de moins de 18 ans ; EPI et premiers secours ; priorité aux riverains ; place réservée aux femmes ; mécanisme de réclamation accessible à tous.</p></div>
+    </div>
+
+    <div class="encadre nuit"><strong>Filière semi-industrielle.</strong> 482 autorisations valides, surtout des sociétés, dont beaucoup ne sont pas équipées. Elles livrent leurs concentrés au centre régional et reçoivent en échange achat public, service gratuit, crédit-bail, formation et conseil. Un régime transitoire de 24 mois au plus est proposé pour les exploitations déjà équipées. Leur production réelle n'est pas publiée : c'est l'inconnue à lever avant tout dimensionnement.</div>
+  </div>
+</section>
+
+<!-- 6. Gouvernance -->
+<section class="bloc sombre" id="gouvernance">
+  <div class="wrap">
+    <div class="num">06 · Gouvernance et adhésion</div>
+    <h2>Personne n'est à la merci d'un autre</h2>
+    <p class="intro">Un conseil national paritaire de la filière, créé par arrêté interministériel Mines–Finances : six voix pour l'État, six pour la profession. Double majorité pour la formule de prix, la contribution de filière, les règles de répartition, le passage obligé et l'ouverture d'un centre.</p>
+
+    <div class="g2">
+      <div class="schema">
+        <img src="assets/schemas/organigramme.svg" alt="Organigramme de gouvernance de la filière" loading="lazy" data-zoom>
+        <figcaption style="color:var(--gris)">Organigramme de gouvernance de la filière. Schéma de principe. Cliquer pour agrandir.</figcaption>
+      </div>
+      <div>
+        <h3>Le périmètre privé et la prévention des conflits d'intérêts</h3>
+        <p>MCS et ses partenaires privés n'interviennent qu'à Alépé : granulats, traitement du tout-venant des coopératives voisines, centre de formation, distribution de matériel.</p>
+        <ul class="puces">
+          <li>Modules d'Alépé agréés et audités comme les centres régionaux ; convention approuvée sans vote de MCS</li>
+          <li>Centrale d'achat portée par la fédération ; MCS fournisseur référencé parmi d'autres</li>
+          <li>Grilles de matériel fixées par le comité technique ; formation multi-marques</li>
+          <li>MCS siège avec voix consultative et ne vote sur aucun dossier qui le concerne</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:56px">Onze mécanismes d'adhésion</h3>
+    <div class="g4">
+      <div class="carte"><span class="n">1</span><p><strong>Paiement immédiat</strong> — 75 % le jour même, solde à J+3</p></div>
+      <div class="carte"><span class="n">2</span><p><strong>Paiement éclaté</strong> — la coopérative ne détient jamais l'argent de ses membres</p></div>
+      <div class="carte"><span class="n">3</span><p><strong>Prix au cours du jour</strong> et clause de compétitivité régionale</p></div>
+      <div class="carte"><span class="n">4</span><p><strong>Compte à trois poches</strong> — disponible, épargne, protection</p></div>
+      <div class="carte"><span class="n">5</span><p><strong>Carte de l'orpailleur</strong> — identité professionnelle et historique de crédit</p></div>
+      <div class="carte"><span class="n">6</span><p><strong>Intégration des informels</strong> — collecteurs et préfinanceurs agréés ; régularisation sur 24 mois</p></div>
+      <div class="carte"><span class="n">7</span><p><strong>Gouvernance paritaire</strong> — double majorité État–profession</p></div>
+      <div class="carte"><span class="n">8</span><p><strong>Stabilisateurs automatiques</strong> — seuils et réponses écrits à l'avance</p></div>
+      <div class="carte"><span class="n">9</span><p><strong>Prime or responsable</strong> — reversée aux paliers les plus élevés</p></div>
+      <div class="carte"><span class="n">10</span><p><strong>Passerelle vers l'entreprise</strong> — de l'orpailleur recensé à la petite exploitation semi-industrielle</p></div>
+      <div class="carte"><span class="n">11</span><p><strong>Caution de réhabilitation</strong> — restituée si la remise en état est certifiée</p></div>
+      <div class="carte" style="border-top-color:var(--blanc)"><p><strong>Référentiels</strong> — Convention de Minamata, guide OCDE sur le devoir de diligence, ITIE</p></div>
+    </div>
+
+    <h3 style="margin-top:56px">Un système qui se corrige seul</h3>
+    <div class="scroll">
+      <table class="tab">
+        <thead><tr><th>Indicateur publié chaque mois</th><th>Seuil</th><th>Réponse automatique</th></tr></thead>
+        <tbody>
+          <tr><td>Écart avec le meilleur prix officiel d'un pays voisin</td><td>&gt; 2 % pendant deux mois</td><td>Baisse de la décote ; compensation par la réserve</td></tr>
+          <tr><td>Délai moyen de paiement du solde</td><td>&gt; 5 jours</td><td>Pénalité versée aux titulaires ; plan correctif</td></tr>
+          <tr><td>Taux de contestation des pesées</td><td>&gt; 2 % des lots</td><td>Audit du centre ; rotation des agents</td></tr>
+          <tr><td>Or remis par un centre</td><td>&lt; 500 kg/an sur deux ans</td><td>Regroupement ou antenne mobile</td></tr>
+          <tr><td>Lots refusés pour mercure</td><td>&gt; 3 % dans une coopérative</td><td>Suspension de l'avance ; formation obligatoire</td></tr>
+          <tr><td>Réserve de stabilisation</td><td>Pleine</td><td>Baisse de la contribution de filière</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Parties prenantes -->
+<section class="bloc alt" id="parties">
+  <div class="wrap">
+    <div class="num">07 · Parties prenantes</div>
+    <h2>Ce que le dispositif apporte à chacun</h2>
+    <div class="onglets" role="tablist">
+      <button role="tab" aria-selected="true" data-p="pp-etat">État</button>
+      <button role="tab" aria-selected="false" data-p="pp-snmp">Société nationale</button>
+      <button role="tab" aria-selected="false" data-p="pp-orp">Orpailleurs</button>
+      <button role="tab" aria-selected="false" data-p="pp-semi">Semi-industriels</button>
+      <button role="tab" aria-selected="false" data-p="pp-com">Communautés</button>
+      <button role="tab" aria-selected="false" data-p="pp-fin">Banques & bailleurs</button>
+      <button role="tab" aria-selected="false" data-p="pp-ind">Industrie</button>
+    </div>
+    <div class="panneau g2" id="pp-etat" role="tabpanel">
+      <div><h3>Ce qu'il apporte</h3><p>Un or déclaré, tracé et vendu dans le circuit officiel ; des taxes prélevées à la source ; zéro mercure ; une formalisation fondée sur l'accompagnement ; une assiette fiscale élargie sans dépense budgétaire ; l'accès permanent aux données.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Un cadre juridique praticable, la création du conseil national paritaire, l'accord sur le fonds de filière et son compte séquestre, puis, le moment venu, le passage obligé.</p></div>
+    </div>
+    <div class="panneau g2" id="pp-snmp" role="tabpanel" hidden>
+      <div><h3>Ce qu'il apporte</h3><p>Un approvisionnement régulier et tracé ; un réseau de centres léger pour ≈ 0,7 % de la valeur de l'or, neutre pour ses comptes.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Direction des centres, formule de prix, avance au dépôt, paiement éclaté, contre-expertise, contribution de filière.</p></div>
+    </div>
+    <div class="panneau g2" id="pp-orp" role="tabpanel" hidden>
+      <div><h3>Ce qu'il apporte</h3><p>Un revenu visé de 500 000 à 600 000 FCFA par mois, ≈ 2,4 fois plus qu'aujourd'hui, payé le jour même avec un plancher ; épargne et protection sociale ; service gratuit, statut, formation, matériel.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Pré-concentrer sans mercure, livrer une matière d'origine connue, passer par les centres.</p></div>
+    </div>
+    <div class="panneau g2" id="pp-semi" role="tabpanel" hidden>
+      <div><h3>Ce qu'il apporte</h3><p>Pour les non-équipées, le moyen de démarrer ; pour toutes, un acheteur public, un service gratuit, du crédit, de la formation et du conseil ; un régime transitoire pour les équipées.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Faire passer leur production par les centres.</p></div>
+    </div>
+    <div class="panneau g2" id="pp-com" role="tabpanel" hidden>
+      <div><h3>Ce qu'il apporte</h3><p>Collectivités, communautés et détenteurs coutumiers : parts versées selon une charte écrite ; emplois ; rivières moins polluées ; terres réhabilitées ; un comité local de suivi. Collecteurs et financeurs informels : une place légale, agréés et rémunérés à la commission.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Participation au comité local, appui à la médiation ; respect des règles et du plafond de coût du préfinancement.</p></div>
+    </div>
+    <div class="panneau g2" id="pp-fin" role="tabpanel" hidden>
+      <div><h3>Ce qu'il apporte</h3><p>Banques : des emprunteurs formés, à production connue et remboursement prélevé à la source. Bailleurs : un effet de levier, un dispositif qui se finance ensuite seul, un impact mesurable sur le mercure et la formalisation.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Des produits de crédit-bail adaptés ; l'amorçage du fonds de filière, un fonds de garantie, le programme de vérification et le pilote.</p></div>
+    </div>
+    <div class="panneau g2" id="pp-ind" role="tabpanel" hidden>
+      <div><h3>Ce qu'il apporte</h3><p>Fabricants : un site de démonstration, un réseau de maintenance, un débouché mutualisé dans un cadre neutre. BTP : des granulats alluvionnaires de proximité depuis Alépé.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Sponsoring du site de formation, prix et disponibilité des pièces ; contrats d'enlèvement de granulats.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Démarche -->
+<section class="bloc sombre" id="demarche">
+  <div class="wrap">
+    <div class="num">08 · La démarche</div>
+    <h2>Vérifier avant d'investir</h2>
+    <p class="intro">Le concept et l'organisation sont définis ; ils ne sont pas encore démontrés. Chaque étape a une condition de passage fixée à l'avance.</p>
+    <div class="frise">
+      <div><span class="e">Étape 1</span><h3>Programme de vérification</h3><p>Ingénieur indépendant ; essais de laboratoire ; enquête de terrain ; analyse juridique ; données semi-industrielles.</p><p class="cond">Récupération confirmée ; cadre praticable ; accord de principe sur le fonds de filière.</p></div>
+      <div><span class="e">Étape 2</span><h3>Unité pilote à Alépé</h3><p>10 à 20 t/h ; coopératives volontaires ; premiers kits ; 6 à 12 mois.</p><p class="cond">Critères fixés à l'avance : récupération, apports, revenus, incidents.</p></div>
+      <div><span class="e">Étape 3</span><h3>Carrière mixte d'Alépé</h3><p>Granulats ; centre de formation ; premier module de 60 t/h si apports contractualisés.</p><p class="cond">Autorisation, étude d'impact, accord foncier.</p></div>
+      <div><span class="e">Étape 4</span><h3>Premier centre régional</h3><p>Bocanda, bassin le plus dense en autorisations, avec des titulaires volontaires.</p><p class="cond">Pilote concluant ; conseil national installé ; fonds amorcés.</p></div>
+      <div><span class="e">Étape 5</span><h3>Déploiement</h3><p>Yamoussoukro, Bouaké, Adzopé, puis Soubré, M'Bahiakro, Bondoukou, le nord.</p><p class="cond">Résultats du premier centre ; prix jugé équitable ; analyse sécuritaire.</p></div>
+    </div>
+
+    <h3 style="margin-top:56px">Principaux risques et parades</h3>
+    <div class="g2" style="gap:24px">
+      <div>
+        <details class="risque"><summary>Teneur réelle inférieure aux attentes <em>Économique</em></summary><p>Aucune projection de revenu avant les essais ; charte en pourcentages ; plancher porté par les réserves.</p></details>
+        <details class="risque"><summary>Pertes d'or fin à la pré-concentration <em>Technique</em></summary><p>Essais en laboratoire puis pilote ; essais distincts alluvions / latérites et saprolites, dont l'or est souvent plus fin.</p></details>
+        <details class="risque"><summary>Or d'origine illégale présenté aux centres <em>Juridique</em></summary><p>Rattachement de chaque lot à une autorisation, cohérence avec la production déclarée et la capacité du matériel, suivi satellitaire, contrôles inopinés.</p></details>
+        <details class="risque"><summary>Capture de la valeur par des dirigeants ou un financeur <em>Social</em></summary><p>Paiement éclaté à la source ; préfinancement plafonné ; audit annuel.</p></details>
+        <details class="risque"><summary>Prix d'achat de l'État jugé insuffisant <em>Marché</em></summary><p>Prix au cours du jour ; clause de compétitivité régionale ; avance au dépôt ; contreparties que l'informel n'offre pas.</p></details>
+      </div>
+      <div>
+        <details class="risque"><summary>Cadre juridique défavorable ou retardé <em>Réglementaire</em></summary><p>Dialogue précoce avec l'administration ; pilote sur des coopératives déjà titulaires ; adhésion volontaire.</p></details>
+        <details class="risque"><summary>Retard de la filière nationale <em>Institutionnel</em></summary><p>Acheteur agréé transitoire désigné par l'État.</p></details>
+        <details class="risque"><summary>Contribution de filière refusée <em>Institutionnel</em></summary><p>Contribution réduite à 0,5 % ; démonstration de l'économie réalisée ; à défaut, fraction de la redevance affectée par la loi de finances.</p></details>
+        <details class="risque"><summary>Opposition des collecteurs et financeurs informels <em>Social</em></summary><p>Agents et préfinanceurs agréés ; fenêtre de régularisation de 24 mois ; formation ouverte à tous ; appui des autorités et des chefferies.</p></details>
+        <details class="risque"><summary>Approvisionnement insuffisant d'Alépé <em>Économique</em></summary><p>Investissement par modules, conditionné aux apports contractualisés.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Objectifs et investissements -->
+<section class="bloc" id="chiffres">
+  <div class="wrap">
+    <div class="num">09 · Objectifs et ordres de grandeur</div>
+    <h2>10 tonnes d'or par an, avec les deux filières</h2>
+    <p class="intro">≈ 10 % de la capacité annoncée de l'unité nationale d'affinage ; au cours retenu de 4 000 USD l'once, une valeur approchant 730 Md FCFA par an. L'objectif n'est pas une projection : c'est la cible autour de laquelle le réseau sera dimensionné.</p>
+    <div class="g2">
+      <div>
+        <div class="scroll">
+          <table class="tab">
+            <thead><tr><th>Filière</th><th>Contribution visée</th><th>Ce qu'elle suppose</th></tr></thead>
+            <tbody>
+              <tr><td>Artisanale</td><td>≈ 3 t/an (1,8 à 3,8 t)</td><td>20 000 orpailleurs formés en 10 ans, équipés et adhérents</td></tr>
+              <tr><td>Semi-industrielle</td><td>≈ 7 t/an</td><td>≈ 15 kg/an en moyenne pour chacune des ≈ 480 autorisations valides — hypothèse à vérifier</td></tr>
+              <tr><td>Total</td><td>≈ 10 t/an</td><td>Une dizaine de centres régionaux d'≈ 1 t/an chacun</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 style="margin-top:32px">Principe de financement</h3>
+        <ul class="puces">
+          <li>Carrière mixte d'Alépé : base commerciale, portée par la vente de granulats</li>
+          <li>Centres régionaux : société nationale, sur sa décote ; cofinancement possible des bailleurs</li>
+          <li>Matériel des titulaires : crédit-bail bancaire, fonds de garantie des bailleurs</li>
+          <li>Centre de formation : financement mixte, 50 % de l'investissement subventionné</li>
+          <li>Fonds de filière : avance remboursable ≈ 1,5 Md FCFA, remboursée des années 4 à 6 ; puis ≈ 2,2 Md FCFA/an pour le soutien à la filière en régime</li>
+        </ul>
+      </div>
+      <div>
+        <div class="scroll">
+          <table class="tab">
+            <thead><tr><th>Composante</th><th>Investissement estimé</th></tr></thead>
+            <tbody>
+              <tr><td>Programme de vérification</td><td>300 à 580 M FCFA sur 12 mois</td></tr>
+              <tr><td>Unité pilote (10–20 t/h)</td><td>≈ 400 M FCFA</td></tr>
+              <tr><td>Alépé : granulats</td><td>3,6 à 5,5 Md FCFA</td></tr>
+              <tr><td>Alépé : tout-venant, 2 × 60 t/h</td><td>1,8 à 2,5 Md FCFA, module par module</td></tr>
+              <tr><td>Centre de formation</td><td>≈ 475 M FCFA (50 % subventionné) ; ≈ 240 M FCFA/an de fonctionnement</td></tr>
+              <tr><td>Centre régional (léger)</td><td>≈ 0,5 Md FCFA ; ≈ 5 Md pour dix centres sur sept ans</td></tr>
+              <tr><td>Registre de lots numérique</td><td>60 à 120 M FCFA sur 3 ans</td></tr>
+              <tr><td>Amorçage du fonds de filière</td><td>≈ 1,5 Md FCFA</td></tr>
+              <tr><td>Fonds de roulement des avances</td><td>≈ 4,4 Md FCFA, porté par la société nationale</td></tr>
+              <tr><td>Fonds de garantie, centrale d'achat</td><td>À dimensionner</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Estimations de cadrage, non adossées à des devis, à réviser après le programme de vérification.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Proposition -->
+<section class="contact" id="proposition">
+  <div class="wrap">
+    <div class="num">10 · Ce que nous proposons</div>
+    <h2>Ce que nous demandons aujourd'hui n'est pas un financement</h2>
+    <p class="intro" style="color:var(--noir)">C'est d'abord un dialogue, à un stade où le dispositif peut encore être amendé : un premier entretien avec chacun, puis un groupe de travail restreint, préfiguration du conseil national de la filière, pour suivre le programme de vérification et préparer le pilote.</p>
+    <div class="scroll" style="border-color:var(--noir)">
+      <table class="tab">
+        <thead><tr><th>Interlocuteur</th><th>Proposition</th></tr></thead>
+        <tbody>
+          <tr><td>Administration des mines</td><td>Le cadre du dispositif, la production semi-industrielle, le régime transitoire, la désignation d'un correspondant</td></tr>
+          <tr><td>Société nationale des métaux précieux</td><td>Direction des centres, formule de prix, avance au dépôt, paiement éclaté, contre-expertise, contribution de filière, registre des lots</td></tr>
+          <tr><td>Ministère chargé des finances</td><td>Le fonds de filière, son compte séquestre et l'absence de dépense budgétaire</td></tr>
+          <tr><td>Coopératives et titulaires</td><td>Titulaires volontaires pour le pilote et le premier centre ; représentation au conseil national</td></tr>
+          <tr><td>Banques et crédit-bail</td><td>Paiement sur la carte de l'orpailleur ; produit de crédit-bail remboursé à la source</td></tr>
+          <tr><td>Fabricants</td><td>Démonstration, formation et sponsoring, dans un cadre de neutralité</td></tr>
+          <tr><td>Partenaires financiers</td><td>Programme de vérification et pilote ; amorçage du fonds de filière (≈ 1,5 Md FCFA) ; fonds de garantie du crédit aux titulaires</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="encadre nuit" style="margin-top:40px">
+      <strong>Contact</strong><br>
+      Sébastien Maurel, Directeur Général — Mines et Carrières Services (MCS), Abidjan, Côte d'Ivoire.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Mines et Carrières Services</strong> — Abidjan<br>La carrière mixte · Document de présentation, version 7 · octobre 2026</div>
+    <div style="max-width:560px">Document confidentiel — document de concept, ne vaut ni offre ni avis juridique. Les chiffres sont des ordres de grandeur issus de sources publiques et du modèle économique de la filière V4, à recaler sur le programme de vérification. Photos à caractère illustratif.</div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-label="Schéma agrandi"><img alt=""></div>
+
+<script>
+  (function () {
+    var burger = document.querySelector('.burger');
+    var menu = document.getElementById('menu');
+    burger.addEventListener('click', function () {
+      var o = menu.classList.toggle('ouvert');
+      burger.setAttribute('aria-expanded', o);
+    });
+    menu.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') { menu.classList.remove('ouvert'); burger.setAttribute('aria-expanded', false); }
+    });
+
+    var tabs = document.querySelectorAll('.onglets button');
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        tabs.forEach(function (x) {
+          x.setAttribute('aria-selected', x === t);
+          document.getElementById(x.dataset.p).hidden = x !== t;
+        });
+      });
+    });
+
+    var lb = document.getElementById('lb');
+    var lbImg = lb.querySelector('img');
+    document.querySelectorAll('[data-zoom]').forEach(function (img) {
+      img.addEventListener('click', function () { lbImg.src = img.src; lbImg.alt = img.alt; lb.classList.add('ouvert'); });
+    });
+    lb.addEventListener('click', function () { lb.classList.remove('ouvert'); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') lb.classList.remove('ouvert'); });
+  })();
+</script>
+</body>
+</html>
