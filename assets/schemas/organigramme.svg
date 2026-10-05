@@ -43,11 +43,10 @@
 <path d="M300 615 L300 645" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
 <path d="M800 615 L800 645" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
 <path d="M1300 615 L1300 645" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
-<path d="M212 645 L1388 645" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M212 645 L1193 645" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
 <path d="M215 645 L215 708" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
 <path d="M605 645 L605 708" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
-<path d="M995 645 L995 708" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
-<path d="M1385 645 L1385 708" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1190 645 L1190 708" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
 <rect x="60" y="710" width="310" height="130" rx="10" fill="#F7C948" stroke="#1E3A5F" stroke-width="2.5" stroke-dasharray="10 6"/>
 <text x="215.0" y="733.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="#1E3A5F">Pôle d&#39;Alépé</text>
 <text x="215.0" y="767.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#1E3A5F">MCS et partenaires</text>
