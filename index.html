@@ -95,6 +95,7 @@
   .intro { font-size: 20px; max-width: 860px; margin: 0 0 42px; color: #1b2430; }
   .sombre .intro { color: rgba(250,250,245,.9); }
   .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .g2 > * { min-width: 0; }
   .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
   .g5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
@@ -248,6 +249,8 @@
     .nav, .burger, .lb { display: none !important; }
     .hero { min-height: auto; }
     section.bloc { padding: 32px 0; }
+    .carte, .phase, .frise > div, details.risque, .tab tr { break-inside: avoid; }
+    .num, h2, h3 { break-after: avoid; }
   }
 </style>
 </head>
@@ -277,7 +280,7 @@
   <div class="wrap">
     <p class="kicker">Côte d'Ivoire · Document confidentiel · Document de concept · Version 7 · Octobre 2026</p>
     <h1>La carrière mixte</h1>
-    <p class="lead">Faire entrer l'or artisanal et semi-industriel dans le circuit officiel : sans mercure, tracé lot par lot, payé le jour même.</p>
+    <p class="lead">Faire entrer l'or artisanal et semi-industriel dans le circuit officiel : sans mercure, tracé lot par lot, payé le jour même.</p>
     <p class="devise">
       <span>Le granulat bancarise le site.</span>
       <span>L'or rémunère les hommes.</span>
@@ -287,18 +290,18 @@
       <a class="btn btn-or" href="#dispositif">Découvrir le dispositif</a>
       <a class="btn btn-ligne" href="#proposition">Ce que nous proposons</a>
     </div>
-    <p style="margin:28px 0 0;font-size:13px;opacity:.75">Photo d'illustration : gravière alluvionnaire sans lien avec le site du projet, encore recherché dans la zone d'Alépé.</p>
+    <p style="margin:28px 0 0;font-size:13px;opacity:.75">Photo d'illustration : gravière alluvionnaire sans lien avec le site du projet, encore recherché dans la zone d'Alépé.</p>
   </div>
 </header>
 
 <div class="chiffres" aria-label="Chiffres clés">
   <div class="wrap">
-    <div class="chiffre"><b>≈ 10 t</b><span>d'or par an visées à terme pour l'unité nationale d'affinage : une cible de dimensionnement, non une projection</span></div>
-    <div class="chiffre"><b>20 000</b><span>orpailleurs à former en 10 ans, soit ≈ 2 000 par an</span></div>
-    <div class="chiffre"><b>≈ × 2,4</b><span>revenu visé de l'orpailleur à effort égal, à recaler sur les essais (≈ × 1,8 si la récupération n'atteint que 50 %)</span></div>
-    <div class="chiffre"><b>75 %</b><span>d'une estimation prudente versés en avance le jour du dépôt ; solde à trois jours</span></div>
+    <div class="chiffre"><b>≈ 10 t</b><span>d'or par an visées à terme pour l'unité nationale d'affinage : une cible de dimensionnement, non une projection</span></div>
+    <div class="chiffre"><b>20 000</b><span>orpailleurs à former en 10 ans, soit ≈ 2 000 par an</span></div>
+    <div class="chiffre"><b>≈ × 2,4</b><span>revenu visé de l'orpailleur à effort égal, à recaler sur les essais (≈ × 1,8 si la récupération n'atteint que 50 %)</span></div>
+    <div class="chiffre"><b>75 %</b><span>d'une estimation prudente versés en avance le jour du dépôt&nbsp;; solde à trois jours</span></div>
     <div class="chiffre"><b>0</b><span>mercure, cyanure ou fusion dans le dispositif</span></div>
-    <div class="chiffre"><b>0 FCFA</b><span>de dépense budgétaire : le dispositif se finance seul après un amorçage des bailleurs (≈ 1,5 Md FCFA)</span></div>
+    <div class="chiffre"><b>0 FCFA</b><span>de dépense budgétaire : le dispositif se finance seul une fois le fonds de filière amorcé par une avance remboursable des bailleurs (≈ 1,5 Md FCFA)</span></div>
   </div>
 </div>
 
@@ -329,16 +332,16 @@
           <table class="tab">
             <thead><tr><th>Indicateur</th><th>Ordre de grandeur</th></tr></thead>
             <tbody>
-              <tr><td>Personnes vivant de l'orpaillage</td><td>Près d'un demi-million, dans 24 régions sur 31 ; une large majorité a moins de 35 ans</td></tr>
-              <tr><td>Sites clandestins actifs recensés</td><td>≈ 800 en 2023, plus de 1 600 en mai 2026</td></tr>
+              <tr><td>Personnes vivant de l'orpaillage</td><td>Près d'un demi-million, dans 24 régions sur 31 ; une large majorité a moins de 35 ans</td></tr>
+              <tr><td>Sites clandestins actifs recensés</td><td>≈ 800 en 2023, plus de 1 600 en mai 2026</td></tr>
               <tr><td>Production artisanale non déclarée</td><td>De l'ordre de 20 t/an (reconstitution, non mesurée)</td></tr>
-              <tr><td>Or sorti en contrebande</td><td>30 à 40 t/an selon SWISSAID ; ce flux inclut vraisemblablement de l'or en transit depuis les pays voisins et n'est donc pas comparable à la seule production nationale</td></tr>
+              <tr><td>Or sorti en contrebande</td><td>30 à 40 t/an selon SWISSAID ; ce flux inclut vraisemblablement de l'or en transit depuis les pays voisins et n'est donc pas comparable à la seule production nationale</td></tr>
               <tr><td>Mercure consommé</td><td>De l'ordre de 10 t/an</td></tr>
-              <tr><td>Or intercepté</td><td>≈ 136 kg saisis depuis 2021</td></tr>
+              <tr><td>Or intercepté</td><td>≈ 136 kg saisis depuis 2021</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="note">Sources publiques hétérogènes, parfois contradictoires : ordres de grandeur, non des mesures.</p>
+        <p class="note">Sources publiques hétérogènes, parfois contradictoires : ordres de grandeur, non des mesures.</p>
       </div>
     </div>
 
@@ -346,11 +349,11 @@
       <div class="carte">
         <h3>Ce que perd l'orpailleur</h3>
         <ul class="puces">
-          <li>Il récupère de l'ordre d'un tiers de l'or contenu, selon les estimations courantes ; l'or fin part au rejet</li>
+          <li>Il récupère de l'ordre d'un tiers de l'or contenu, selon les estimations courantes ; l'or fin part au rejet</li>
           <li>Il vend sous le cours, à des acheteurs informels</li>
           <li>Il dépend du financeur, du propriétaire du trou et de l'acheteur</li>
-          <li>Il expose sa santé : mercure, effondrements, noyades</li>
-          <li>Il reste hors du droit : ni statut, ni crédit, ni recours</li>
+          <li>Il expose sa santé : mercure, effondrements, noyades</li>
+          <li>Il reste hors du droit : ni statut, ni crédit, ni recours</li>
         </ul>
       </div>
       <div class="carte">
@@ -365,15 +368,15 @@
       <div class="carte or">
         <h3>Le contexte de septembre 2026</h3>
         <ul class="puces">
-          <li>16 sept. : unité nationale d'affinage ≈ 100 t/an annoncée à Abidjan pour 2027</li>
-          <li>17 sept. : le Conseil national de sécurité décide un moratoire de six mois sur la délivrance des autorisations artisanales et semi-industrielles</li>
-          <li>Le même jour : création décidée de 21 pelotons de sécurité fluviale ; loi aggravant les sanctions en préparation</li>
-          <li>Bilan du Conseil national de sécurité à fin juillet 2026 (Agence Ecofin) : plus de 8 500 sites démantelés depuis 2021, 4 474 personnes déférées ; l'activité persiste, voire s'étend</li>
+          <li>16 sept. : unité nationale d'affinage ≈ 100 t/an annoncée à Abidjan pour 2027</li>
+          <li>17 sept. : le Conseil national de sécurité décide un moratoire de six mois sur la délivrance des autorisations artisanales et semi-industrielles</li>
+          <li>Le même jour : création décidée de 21 pelotons de sécurité fluviale ; loi aggravant les sanctions en préparation</li>
+          <li>Bilan du Conseil national de sécurité à fin juillet 2026 (Agence Ecofin) : plus de 8 500 sites démantelés depuis 2021, 4 474 personnes déférées ; l'activité persiste, voire s'étend</li>
         </ul>
       </div>
     </div>
 
-    <div class="encadre nuit"><strong>La répression seule ne suffit pas.</strong> Il faut aussi que la voie légale soit la plus rémunératrice pour l'orpailleur, et que l'or soit suivi jusqu'à son acheteur. La carrière mixte ne concurrence pas la lutte contre l'orpaillage illégal : elle fournit aux circuits officiels l'amont qui leur manque.</div>
+    <div class="encadre nuit"><strong>La répression seule ne suffit pas.</strong> Il faut aussi que la voie légale soit la plus rémunératrice pour l'orpailleur, et que l'or soit suivi jusqu'à son acheteur. La carrière mixte ne concurrence pas la lutte contre l'orpaillage illégal : elle fournit aux circuits officiels l'amont qui leur manque.</div>
   </div>
 </section>
 
@@ -385,9 +388,9 @@
     <p class="intro">Les titulaires d'autorisations reçoivent formation, accès au crédit et conseil technique. En échange, leur or passe par un centre régional de la société nationale des métaux précieux, qui le pèse devant eux, le titre et l'achète pour le compte de l'État, en payant le jour même.</p>
 
     <div class="g3">
-      <div class="carte or"><span class="n">1</span><h3>Payer vite, payer chacun directement</h3><p>Avance de 75 % sur la carte de chaque membre le jour du dépôt ; trois jours plus tard, paiement direct de chaque bénéficiaire : membres, coopérative, État, banque, détenteurs coutumiers. Personne ne peut capter la part d'un autre.</p></div>
-      <div class="carte or"><span class="n">2</span><h3>Se financer soi-même, sans dépense budgétaire</h3><p>La société nationale finance ses centres sur sa décote ; une contribution de filière de 0,5 à 0,6 % du cours finance la formation, le contrôle et le soutien à la filière. Le service est gratuit pour les titulaires.</p></div>
-      <div class="carte or"><span class="n">3</span><h3>Décider à deux, se corriger seul</h3><p>Conseil national paritaire État–profession, à double majorité pour les décisions structurantes ; indicateurs publiés chaque mois ; ajustements automatiques écrits à l'avance.</p></div>
+      <div class="carte or"><span class="n">1</span><h3>Payer vite, payer chacun directement</h3><p>Avance de 75 % sur la carte de chaque membre le jour du dépôt ; trois jours plus tard, paiement direct de chaque bénéficiaire : membres, coopérative, État, banque, détenteurs coutumiers. Personne ne peut capter la part d'un autre.</p></div>
+      <div class="carte or"><span class="n">2</span><h3>Se financer soi-même, sans dépense budgétaire</h3><p>La société nationale finance ses centres sur sa décote ; une contribution de filière de 0,5 à 0,6 % du cours finance la formation, le contrôle et le soutien à la filière. Le service est gratuit pour les titulaires.</p></div>
+      <div class="carte or"><span class="n">3</span><h3>Décider à deux, se corriger seul</h3><p>Conseil national paritaire État–profession, à double majorité pour les décisions structurantes ; indicateurs publiés chaque mois ; ajustements automatiques écrits à l'avance.</p></div>
     </div>
 
     <h3 style="margin-top:56px">Trois niveaux, deux types d'installations à ne pas confondre</h3>
@@ -395,9 +398,9 @@
       <table class="tab">
         <thead><tr><th>Niveau</th><th>Où</th><th>Rôle</th></tr></thead>
         <tbody>
-          <tr><td>Chantiers des titulaires</td><td>Autorisations artisanales (AEA) et semi-industrielles (AESI)</td><td>Extraction et pré-concentration sans mercure ; concentrés placés sous scellé. Aucun or n'est extrait sur le chantier.</td></tr>
-          <tr><td>Centres régionaux</td><td>Villes relais des bassins aurifères : Bocanda, Yamoussoukro, Bouaké, Adzopé, puis Soubré, M'Bahiakro, Bondoukou et le nord</td><td>Antennes de la société nationale : réception, test mercure, traitement gravimétrique, pesée, titrage, achat et paiement ; antenne de maintenance</td></tr>
-          <tr><td>Alépé, cœur du dispositif</td><td>Basse Comoé, ≈ 45 km d'Abidjan ; un seul site</td><td>Formation, certification, démonstration, centrale d'achat, maintenance, appui au montage des crédits ; traitement du tout-venant des coopératives voisines ; granulats</td></tr>
+          <tr><td>Chantiers des titulaires</td><td>Autorisations artisanales (AEA) et semi-industrielles (AESI)</td><td>Extraction et pré-concentration sans mercure ; concentrés placés sous scellé. Aucun or n'est extrait sur le chantier.</td></tr>
+          <tr><td>Centres régionaux</td><td>Villes relais des bassins aurifères : Bocanda, Yamoussoukro, Bouaké, Adzopé, puis Soubré, M'Bahiakro, Bondoukou et le nord</td><td>Antennes de la société nationale : réception, test mercure, traitement gravimétrique, pesée, titrage, achat et paiement ; antenne de maintenance</td></tr>
+          <tr><td>Alépé, cœur du dispositif</td><td>Basse Comoé, ≈ 45 km d'Abidjan ; un seul site</td><td>Formation, certification, démonstration, centrale d'achat, maintenance, appui au montage des crédits ; traitement du tout-venant des coopératives voisines ; granulats</td></tr>
         </tbody>
       </table>
     </div>
@@ -410,23 +413,23 @@
           <tr><td>Autorisations d'or valides</td><td>212, plus 152 en renouvellement</td><td>480</td></tr>
           <tr><td>Surface</td><td>Jusqu'à 25 ha</td><td>25 à 100 ha</td></tr>
           <tr><td>Interlocuteur du centre</td><td>La coopérative uniquement, jamais l'orpailleur individuel</td><td>La société titulaire</td></tr>
-          <tr><td>Équipement</td><td>Peu ou pas ; lavage souvent au mercure</td><td>Beaucoup non équipées ; équipement en crédit-bail</td></tr>
+          <tr><td>Équipement</td><td>Peu ou pas ; lavage souvent au mercure</td><td>Beaucoup non équipées ; équipement en crédit-bail</td></tr>
           <tr><td>Ce qui arrive au centre</td><td colspan="2">Des concentrés sous scellé, préparés sans mercure sur le chantier — matériaux meubles uniquement (alluvions, latérites meubles, saprolites tendres)</td></tr>
-          <tr><td>Coût du service</td><td colspan="2">Aucun : centres financés par la société nationale</td></tr>
-          <tr><td>Régime</td><td colspan="2">Volontaire pendant le pilote ; obligatoire ensuite si l'État le décide</td></tr>
+          <tr><td>Coût du service</td><td colspan="2">Aucun : centres financés par la société nationale</td></tr>
+          <tr><td>Régime</td><td colspan="2">Volontaire pendant le pilote ; obligatoire ensuite si l'État le décide</td></tr>
         </tbody>
       </table>
     </div>
 
     <h3 style="margin-top:56px">Une chaîne où chaque maillon rend le suivant possible</h3>
     <div class="g5" id="chaine">
-      <div class="carte"><h3>Formation</h3><p>Procédés sans mercure, sécurité, gestion, environnement ; certification auditable par un tiers</p></div>
+      <div class="carte"><h3>Formation</h3><p>Procédés sans mercure, sécurité, gestion, environnement ; certification auditable par un tiers</p></div>
       <div class="carte"><h3>Traçabilité</h3><p>Conteneur scellé par site, bordereau de lot, pesée contradictoire, suivi satellitaire</p></div>
       <div class="carte"><h3>Paiement</h3><p>Avance au dépôt puis paiement éclaté sur la carte de chaque membre</p></div>
-      <div class="carte"><h3>Crédit</h3><p>Crédit-bail remboursé à la source ; fonds de garantie des bailleurs</p></div>
+      <div class="carte"><h3>Crédit</h3><p>Crédit-bail remboursé à la source ; fonds de garantie des bailleurs</p></div>
       <div class="carte"><h3>Matériel & conseil</h3><p>Diagnostic, maintenance, meilleure récupération</p></div>
     </div>
-    <div class="encadre">Les banques prêtent parce que la production est vue et le remboursement pris à la source ; les titulaires entrent parce qu'ils y trouvent matériel, compétences et meilleur prix ; l'État obtient l'or et la traçabilité.</div>
+    <div class="encadre">Les banques prêtent parce que la production est vue et le remboursement pris à la source ; les titulaires entrent parce qu'ils y trouvent matériel, compétences et meilleur prix ; l'État obtient l'or et la traçabilité.</div>
   </div>
 </section>
 
@@ -435,25 +438,25 @@
   <div class="wrap">
     <div class="num">03 · Alépé, cœur du dispositif</div>
     <h2>Une gravière qui porte une école</h2>
-    <p class="intro">À environ 45 km d'Abidjan, sur une terrasse alluviale de la Comoé, nous projetons une exploitation de granulats alluvionnaires pour le BTP du Grand Abidjan, socle économique d'un centre de formation de référence aux métiers de la petite mine et des carrières. Le site démonstrateur est encore recherché dans la zone d'Alépé ; sa localisation précise reste confidentielle tant que la question foncière n'est pas réglée avec les détenteurs coutumiers. Alépé n'est pas un centre régional et ne reçoit pas de concentrés.</p>
+    <p class="intro">À environ 45 km d'Abidjan, sur une terrasse alluviale de la Comoé, nous projetons une exploitation de granulats alluvionnaires pour le BTP du Grand Abidjan, socle économique d'un centre de formation de référence aux métiers de la petite mine et des carrières. Le site démonstrateur est encore recherché dans la zone d'Alépé ; les localisations précises des terrasses ciblées restent confidentielles tant que la question foncière n'est pas réglée avec les détenteurs coutumiers. Alépé n'est pas un centre régional et ne reçoit pas de concentrés.</p>
 
     <div class="g2">
       <div>
         <h3>La géologie qui rend la carrière mixte possible</h3>
-        <p>Dans une terrasse alluvionnaire, le courant a trié les matériaux : les éléments tendres sont partis, le quartz roulé est resté. L'or, plus de sept fois plus dense que le quartz, a migré vers le bas et s'est concentré au contact du socle. <strong>La couche de base est à la fois le granulat le plus propre du gisement et sa couche la plus aurifère.</strong></p>
-        <p>Aujourd'hui, sur ces terrasses, deux activités se croisent sans se voir : les gravières rejettent l'or avec leurs eaux de lavage ; l'orpailleur abandonne le granulat après en avoir tiré l'or au mercure. La carrière mixte traite cette ressource une seule fois et en tire les deux produits.</p>
+        <p>Dans une terrasse alluvionnaire, le courant a trié les matériaux : les éléments tendres sont partis, le quartz roulé est resté. L'or, plus de sept fois plus dense que le quartz, a migré vers le bas et s'est concentré au contact du socle. <strong>La couche de base est à la fois le granulat le plus propre du gisement et sa couche la plus aurifère.</strong></p>
+        <p>Aujourd'hui, sur ces terrasses, deux activités se croisent sans se voir : les gravières rejettent l'or avec leurs eaux de lavage ; l'orpailleur abandonne le granulat après en avoir tiré l'or au mercure. La carrière mixte traite cette ressource une seule fois et en tire les deux produits.</p>
         <h3 style="margin-top:28px">L'exploitation de granulats</h3>
         <ul class="puces">
-          <li><strong>Du haut vers le bas</strong> : découverte mise de côté, sables et graviers vendus au fur et à mesure, gravier de base atteint en dernier</li>
+          <li><strong>Du haut vers le bas</strong> : découverte mise de côté, sables et graviers vendus au fur et à mesure, gravier de base atteint en dernier</li>
           <li><strong>Par parcelles successives</strong> de 50 ha / 4 ans, chacune réhabilitée dès épuisement</li>
-          <li><strong>Sans explosif</strong> : concassage-criblage des galets en graviers concassés</li>
-          <li><strong>Vente départ carrière</strong> dans un rayon économique de ≈ 60 km</li>
-          <li><strong>Rien n'est un déchet</strong> : fines → briques de terre comprimée ; parcelles → agriculture, pisciculture</li>
+          <li><strong>Sans explosif</strong> : concassage-criblage des galets en graviers concassés</li>
+          <li><strong>Vente départ carrière</strong> dans un rayon économique de ≈ 60 km</li>
+          <li><strong>Rien n'est un déchet</strong> : fines → briques de terre comprimée ; parcelles → agriculture, pisciculture</li>
         </ul>
       </div>
       <figure>
         <img class="photo" src="assets/img/traitement-gravimetrique.jpg" alt="Installation de traitement gravimétrique : trommel, sluice et tables de lavage" loading="lazy">
-        <figcaption>Ligne de traitement gravimétrique (photo d'illustration) : débourbage, criblage, sluice — sans mercure.</figcaption>
+        <figcaption>Ligne de traitement gravimétrique (photo d'illustration) : débourbage, criblage, sluice — sans mercure.</figcaption>
       </figure>
     </div>
 
@@ -464,14 +467,14 @@
       </figure>
       <div>
         <h3>Le traitement du tout-venant des coopératives voisines</h3>
-        <p>Seul endroit du dispositif où des coopératives livrent leur tout-venant brut. Capacité visée : <strong>deux modules de 60 t/h</strong>, sans mercure, sans cyanure, sans fusion.</p>
+        <p>Seul endroit du dispositif où des coopératives livrent leur tout-venant brut. Capacité visée : <strong>deux modules de 60 t/h</strong>, sans mercure, sans cyanure, sans fusion.</p>
         <ul class="puces">
-          <li><strong>Module alluvions</strong> : débourbage, criblage, jig pour l'or grossier, concentrateurs centrifuges pour l'or fin, table à secousses, séparation magnétique</li>
-          <li><strong>Module latérites et saprolites</strong> : délitage intensif, concentration centrifuge, table à secousses ; latérite cuirassée non admise</li>
-          <li><strong>Poste de finition commun</strong>, en campagnes alternées avec purge complète et bilan matière contradictoire : le point le plus contrôlé du site</li>
-          <li>Eaux en circuit fermé ; service rémunéré par le fonds de filière à ≈ 5 % de l'or récupéré</li>
+          <li><strong>Module alluvions</strong> : débourbage, criblage, jig pour l'or grossier, concentrateurs centrifuges pour l'or fin, table à secousses, séparation magnétique</li>
+          <li><strong>Module latérites et saprolites</strong> : délitage intensif, concentration centrifuge, table à secousses ; latérite cuirassée non admise</li>
+          <li><strong>Poste de finition commun</strong>, en campagnes alternées avec purge complète et bilan matière contradictoire : le point le plus contrôlé du site</li>
+          <li>Eaux en circuit fermé ; service rémunéré par le fonds de filière à ≈ 5 % de l'or récupéré</li>
         </ul>
-        <p class="note">Aucune autorisation artisanale ne se trouve aujourd'hui à moins de 50 km d'Alépé : l'approvisionnement dépendra de l'ouverture de la zone artisanale délimitée au cadastre qui touche son département et de la formalisation des orpailleurs ; l'habilitation du site à traiter la matière des coopératives reste par ailleurs à confirmer. L'investissement suit donc l'approvisionnement : unité pilote de 10 à 20 t/h, puis un module de 60 t/h sur apports contractualisés, le second si les volumes le confirment. La teneur du gravier de base n'entre dans aucune projection tant qu'elle n'est pas mesurée.</p>
+        <p class="note">Aucune autorisation artisanale ne se trouve aujourd'hui à moins de 50 km d'Alépé : l'approvisionnement dépendra de l'ouverture de la zone artisanale délimitée au cadastre qui touche son département et de la formalisation des orpailleurs ; l'habilitation du site à traiter la matière des coopératives reste par ailleurs à confirmer. L'investissement suit donc l'approvisionnement : unité pilote de 10 à 20 t/h, puis un module de 60 t/h sur apports contractualisés, le second si les volumes le confirment. La teneur du gravier de base n'entre dans aucune projection tant qu'elle n'est pas mesurée.</p>
       </div>
     </div>
 
@@ -483,7 +486,7 @@
       <div class="carte"><h3>Jeunes</h3><p>Formation qualifiante aux métiers des mines et des carrières, avec les programmes de l'État.</p></div>
     </div>
     <div class="g3" style="margin-top:24px">
-      <div class="carte or"><h3>Site de démonstration</h3><p>Les équipements sont présentés en fonctionnement réel : les futurs sites les voient, s'y forment, puis s'équipent.</p></div>
+      <div class="carte or"><h3>Site de démonstration</h3><p>Les équipements sont présentés en fonctionnement réel : les futurs sites les voient, s'y forment, puis s'équipent.</p></div>
       <div class="carte or"><h3>Centrale d'achat neutre</h3><p>Portée par la fédération des coopératives — non par MCS — elle mutualise pièces d'usure et pièces détachées.</p></div>
       <div class="carte or"><h3>Réseau de maintenance</h3><p>Mécaniciens formés à Alépé, intervenant depuis les antennes des centres régionaux.</p></div>
     </div>
@@ -495,7 +498,7 @@
   <div class="wrap">
     <div class="num">04 · Les centres régionaux</div>
     <h2>Des antennes légères de la société nationale, au plus près des bassins</h2>
-    <p class="intro">Un centre régional ne traite pas de tout-venant : il reçoit des concentrés. Il se réduit à un hangar de traitement gravimétrique, un poste de pesée, un coffre-fort certifié et une petite antenne de maintenance — ≈ 0,5 Md FCFA, un douzième de l'investissement d'Alépé.</p>
+    <p class="intro">Un centre régional ne traite pas de tout-venant : il reçoit des concentrés. Il se réduit à un hangar de traitement gravimétrique, un poste de pesée, un coffre-fort certifié et une petite antenne de maintenance — ≈ 0,5 Md FCFA, un douzième de l'investissement d'Alépé.</p>
 
     <div class="g2">
       <div>
@@ -506,19 +509,19 @@
             <tbody>
               <tr><td>Réception, scellé, bordereau</td><td>Chaque lot rattaché à une autorisation</td></tr>
               <tr><td>Test de mercure</td><td>Lot contaminé refusé, titulaire suspendu</td></tr>
-              <tr><td>Traitement gravimétrique</td><td>Seul procédé admis ; aucun mélange ; purge entre titulaires</td></tr>
+              <tr><td>Traitement gravimétrique</td><td>Seul procédé admis ; aucun mélange ; purge entre titulaires</td></tr>
               <tr><td>Pesée contradictoire</td><td>Devant le propriétaire, filmée, PV signé</td></tr>
               <tr><td>Échantillons scellés</td><td>Titre contradictoire, contre-analyse possible</td></tr>
               <tr><td>Coffre-fort certifié</td><td>Vidéosurveillance, assurance</td></tr>
-              <tr><td>Achat par la société nationale</td><td>75 % le jour même ; solde à J+3, payé à chaque bénéficiaire</td></tr>
+              <tr><td>Achat par la société nationale</td><td>75 % le jour même ; solde à J+3, payé à chaque bénéficiaire</td></tr>
             </tbody>
           </table>
         </div>
         <ul class="puces" style="margin-top:24px">
           <li>Direction des centres distincte de la direction commerciale, sous contrat de service avec l'État</li>
-          <li>Coût ≈ 5,2 Md FCFA/an pour dix centres en régime, investissement compris, soit ≈ 0,7 % de la valeur de l'or, financé sur la décote — neutre pour la société nationale, dont la contribution de filière est réduite d'autant (0,6 % du cours pendant huit ans, puis 0,5 %)</li>
-          <li>Fonds de roulement des avances ≈ 4,4 Md FCFA</li>
-          <li>Seuil de pertinence ≈ 500 kg d'or/an ; en dessous, regroupement ou antenne mobile</li>
+          <li>Coût ≈ 5,2 Md FCFA/an pour dix centres en régime, investissement compris, soit ≈ 0,7 % de la valeur de l'or, financé sur la décote — neutre pour la société nationale, dont la contribution de filière est réduite d'autant (0,6 % du cours pendant huit ans, puis 0,5 %)</li>
+          <li>Fonds de roulement des avances ≈ 4,4 Md FCFA</li>
+          <li>Seuil de pertinence ≈ 500 kg d'or/an ; en dessous, regroupement ou antenne mobile</li>
         </ul>
       </div>
       <figure class="schema">
@@ -528,12 +531,12 @@
     </div>
 
     <h3 style="margin-top:56px">Un réseau déployé par phases</h3>
-    <p>Selon le cadastre minier, trois points à moins de 50 km des autorisations couvriraient la moitié des AEA d'or du pays ; dix en couvriraient près de 80 %.</p>
+    <p>Selon le cadastre minier, trois points à moins de 50 km des autorisations couvriraient la moitié des AEA d'or du pays ; dix en couvriraient près de 80 %.</p>
     <div class="phases">
       <div class="phase p1"><span class="p">Phase 1</span><h3>Bocanda (N'Zi)</h3><ul><li>109 AEA d'or à moins de 50 km</li><li>Premier bassin du pays</li><li>Premier centre régional</li></ul></div>
-      <div class="phase p2"><span class="p">Phase 2</span><h3>Yamoussoukro · Bouaké · Adzopé</h3><ul><li>Bélier et district de Yamoussoukro : 35 AEA</li><li>Gbêkê–Hambol : 37 AEA</li><li>La Mé : 22 AESI et 3 AEA dans la région, flux surtout semi-industriel</li></ul></div>
-      <div class="phase p3"><span class="p">Phase 3</span><h3>M'Bahiakro · Soubré · Bondoukou</h3><ul><li>Iffou : 24 AEA</li><li>Nawa : 27 AEA</li><li>Gontougo : 9 AEA</li></ul></div>
-      <div class="phase p4"><span class="p">Phase 4</span><h3>Le nord</h3><ul><li>Boundiali / Korhogo : 28 AEA</li><li>Ferkessédougou / Kong : 11 AEA</li><li>Bouna : 21 AEA</li><li>Sous réserve d'analyse sécuritaire</li></ul></div>
+      <div class="phase p2"><span class="p">Phase 2</span><h3>Yamoussoukro · Bouaké · Adzopé</h3><ul><li>Bélier et district de Yamoussoukro : 35 AEA</li><li>Gbêkê–Hambol : 37 AEA</li><li>La Mé : 22 AESI et 3 AEA dans la région, flux surtout semi-industriel</li></ul></div>
+      <div class="phase p3"><span class="p">Phase 3</span><h3>M'Bahiakro · Soubré · Bondoukou</h3><ul><li>Iffou : 24 AEA</li><li>Nawa : 27 AEA</li><li>Gontougo : 9 AEA</li></ul></div>
+      <div class="phase p4"><span class="p">Phase 4</span><h3>Le nord</h3><ul><li>Boundiali / Korhogo : 28 AEA</li><li>Ferkessédougou / Kong : 11 AEA</li><li>Bouna : 21 AEA</li><li>Sous réserve d'analyse sécuritaire</li></ul></div>
     </div>
     <p class="note">Nombres d'AEA d'or à moins de 50 km des points candidats (cadastre minier, 27 septembre 2026), à recalculer par ville. Les données de production semi-industrielle pourront modifier l'ordre des phases.</p>
   </div>
@@ -544,14 +547,14 @@
   <div class="wrap">
     <div class="num">05 · La filière artisanale, priorité du dispositif</div>
     <h2>De la clandestinité au statut de titulaire équipé et certifié</h2>
-    <p class="intro">Le semi-industriel apporte les volumes ; l'artisanal porte l'essentiel des vies, des risques et de l'impact. Un dispositif qui ne réussirait que sur le semi-industriel manquerait son objet.</p>
+    <p class="intro">Le semi-industriel apporte les volumes ; l'artisanal porte l'essentiel des vies, des risques et de l'impact. Un dispositif qui ne réussirait que sur le semi-industriel manquerait son objet.</p>
 
     <div class="parcours">
-      <div class="etape"><h3>Recensé</h3><p>Se fait connaître avec son site et son équipe ; identité enregistrée.</p></div>
-      <div class="etape"><h3>Formé</h3><p>Formation de base : sécurité, procédés sans mercure, pré-concentration ; carte de l'orpailleur.</p></div>
+      <div class="etape"><h3>Recensé</h3><p>Se fait connaître avec son site et son équipe ; identité enregistrée.</p></div>
+      <div class="etape"><h3>Formé</h3><p>Formation de base : sécurité, procédés sans mercure, pré-concentration ; carte de l'orpailleur.</p></div>
       <div class="etape"><h3>Membre d'une coopérative</h3><p>Adhésion à une coopérative agréée, seul intermédiaire avec le centre.</p></div>
       <div class="etape"><h3>Équipé</h3><p>Kit de pré-concentration en crédit-bail, remboursé sur les ventes d'or.</p></div>
-      <div class="etape"><h3>Certifié</h3><p>Livraisons tracées sans mercure : matériel plus important, meilleur crédit, protection sociale.</p></div>
+      <div class="etape"><h3>Certifié</h3><p>Livraisons tracées sans mercure : matériel plus important, meilleur crédit, protection sociale.</p></div>
     </div>
 
     <div class="g2" style="margin-top:64px">
@@ -559,42 +562,42 @@
         <h3>Le partage de la valeur dans une coopérative</h3>
         <p>Proposition de départ, servant de base de négociation à la charte de répartition que chaque coopérative adopte en assemblée générale. Chaque part est versée directement par la société nationale à son bénéficiaire.</p>
         <div class="partage" role="img" aria-label="Exemple illustratif d'un lot, en part de la valeur de l'or au cours : orpailleurs environ 62 % ; décote de la société nationale, redevance et taxes, crédit-bail, réhabilitation et frais d'exploitation environ 29 % ; détenteurs coutumiers environ 3,5 % ; réserves environ 2,8 % ; collectivités environ 1,4 % ; protection sociale environ 0,7 %">
-          <div style="flex:62.4;background:var(--jaune)">Orpailleurs ≈ 62 %</div>
-          <div style="flex:29.1;background:var(--nuit);color:var(--blanc)">≈ 29 %</div>
+          <div style="flex:62.4;background:var(--jaune)">Orpailleurs ≈ 62 %</div>
+          <div style="flex:29.1;background:var(--nuit);color:var(--blanc)">≈ 29 %</div>
           <div style="flex:3.5;background:#4f6684"></div>
           <div style="flex:2.8;background:#9aa8ba"></div>
           <div style="flex:1.4;background:#c9d2de"></div>
           <div style="flex:0.7;background:var(--noir)"></div>
         </div>
         <div class="legende">
-          <span><i style="background:var(--jaune)"></i>Orpailleurs membres (solde) ≈ 62 %</span>
+          <span><i style="background:var(--jaune)"></i>Orpailleurs membres (solde) ≈ 62 %</span>
           <span><i style="background:var(--nuit)"></i>Décote de la société nationale, État, crédit-bail, réhabilitation, frais d'exploitation ≈&nbsp;29&nbsp;%</span>
-          <span><i style="background:#4f6684"></i>Détenteurs coutumiers ≈ 3,5 %</span>
-          <span><i style="background:#9aa8ba"></i>Réserves de la coopérative ≈ 2,8 %</span>
-          <span><i style="background:#c9d2de"></i>Collectivités ≈ 1,4 %</span>
-          <span><i style="background:var(--noir)"></i>Protection sociale ≈ 0,7 %</span>
+          <span><i style="background:#4f6684"></i>Détenteurs coutumiers ≈ 3,5 %</span>
+          <span><i style="background:#9aa8ba"></i>Réserves de la coopérative ≈ 2,8 %</span>
+          <span><i style="background:#c9d2de"></i>Collectivités ≈ 1,4 %</span>
+          <span><i style="background:var(--noir)"></i>Protection sociale ≈ 0,7 %</span>
         </div>
-        <p class="note">Exemple purement illustratif d'un lot de 400 g (règles de répartition V3), exprimé en part de la valeur de l'or au cours ; le prix de la formule de l'État, le taux de redevance et les montants de crédit-bail restent à confirmer. Ordre de prélèvement : 0. État (redevance et taxes) · 1. crédit-bail · 2. fonds de réhabilitation · 3. frais d'exploitation · 4 à 7. coutumiers, collectivités, protection, réserves · 8. orpailleurs. Les rangs 4 à 7 représentent de l'ordre de 5 %, 2 %, 1 % et 4 % de la valeur nette distribuable, qui reste après les rangs 0 à 3 ; les orpailleurs en reçoivent le solde, soit 88 %.</p>
+        <p class="note">Exemple purement illustratif d'un lot de 400 g (règles de répartition V3), exprimé en part de la valeur de l'or au cours ; le prix de la formule de l'État, le taux de redevance et les montants de crédit-bail restent à confirmer. Ordre de prélèvement : 0. État (redevance et taxes) · 1. crédit-bail · 2. fonds de réhabilitation · 3. frais d'exploitation · 4 à 7. coutumiers, collectivités, protection, réserves · 8. orpailleurs. Les rangs 4 à 7 représentent de l'ordre de 5 %, 2 %, 1 % et 4 % de la valeur nette distribuable, qui reste après les rangs 0 à 3 ; les orpailleurs en reçoivent le solde, soit 88 %.</p>
       </div>
       <div>
         <h3>Ce que gagne l'orpailleur</h3>
-        <div class="g2" style="gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
-          <div class="carte or"><span class="n">60–80 %</span><p>de l'or contenu récupéré (objectif), contre ≈ un tiers aujourd'hui ; à confirmer par les essais, notamment sur les pertes d'or fin à la pré-concentration</p></div>
-          <div class="carte or"><span class="n">500–600 k</span><p>FCFA par mois de revenu visé ; plancher de 150 000 FCFA garanti par les réserves</p></div>
-          <div class="carte or"><span class="n">≈ 340 k</span><p>FCFA d'épargne après un an (5 % par défaut, retirable)</p></div>
-          <div class="carte or"><span class="n">≈ 6,5 k</span><p>FCFA par mois pour maladie, accidents et mutuelle</p></div>
+        <div class="g2" style="gap:16px;grid-template-columns:repeat(auto-fit,minmax(max(250px,calc(50% - 9px)),1fr))">
+          <div class="carte or"><span class="n">60–80 %</span><p>de l'or contenu récupéré (objectif), contre ≈ un tiers aujourd'hui ; à confirmer par les essais, notamment sur les pertes d'or fin à la pré-concentration</p></div>
+          <div class="carte or"><span class="n">500–600 k</span><p>FCFA par mois de revenu visé ; plancher de 150 000 FCFA garanti par les réserves</p></div>
+          <div class="carte or"><span class="n">≈ 340 k</span><p>FCFA d'épargne après un an (5 % par défaut, retirable)</p></div>
+          <div class="carte or"><span class="n">≈ 6,5 k</span><p>FCFA par mois pour maladie, accidents et mutuelle</p></div>
         </div>
-        <p class="note">Hypothèse de productivité : 11 à 13 g d'or par mois et par orpailleur, soit 0,5 à 0,6 t de tout-venant par jour à 1,5 g/t ; à recaler sur les essais et l'enquête de terrain. Au-delà de 600 000 FCFA par mois (moyenne sur la campagne trimestrielle), surplus partagé : 30 % orpailleur / 40 % fonds de développement de la coopérative / 30 % fonds de filière.</p>
+        <p class="note">Hypothèse de productivité : 11 à 13 g d'or par mois et par orpailleur, soit 0,5 à 0,6 t de tout-venant par jour à 1,5 g/t ; à recaler sur les essais et l'enquête de terrain. Au-delà de 600 000 FCFA par mois (moyenne sur la campagne trimestrielle), surplus partagé : 30 % orpailleur / 40 % fonds de développement de la coopérative / 30 % fonds de filière.</p>
       </div>
     </div>
 
     <div class="g3" style="margin-top:48px">
-      <div class="carte"><h3>Sur le chantier</h3><p>Plus de puits profonds. Pré-concentration sans mercure (débourbage, sluice ou jig, concentrateur centrifuge). Ni battée, ni amalgamation, ni fusion : le concentré part sous scellé.</p></div>
-      <div class="carte"><h3>Garde-fous de collecte</h3><p>Conteneurs numérotés fournis par le centre ; tournées déclarées à l'avance ; masse livrée rapprochée de la production déclarée et de la capacité du matériel. Chaque membre est informé directement de chaque lot.</p></div>
-      <div class="carte"><h3>Engagements sociaux</h3><p>Aucun travailleur de moins de 18 ans ; EPI et premiers secours ; priorité aux riverains ; place réservée aux femmes ; mécanisme de réclamation ouvert aux membres, aux riverains et aux détenteurs coutumiers, traité par le comité local de suivi dans un délai fixé.</p></div>
+      <div class="carte"><h3>Sur le chantier</h3><p>Plus de puits profonds. Pré-concentration sans mercure (débourbage, sluice ou jig, concentrateur centrifuge). Ni battée, ni amalgamation, ni fusion : le concentré part sous scellé.</p></div>
+      <div class="carte"><h3>Garde-fous de collecte</h3><p>Conteneurs numérotés fournis par le centre ; tournées déclarées à l'avance ; masse livrée rapprochée de la production déclarée et de la capacité du matériel. Chaque membre est informé directement de chaque lot.</p></div>
+      <div class="carte"><h3>Engagements sociaux</h3><p>Aucun travailleur de moins de 18 ans ; EPI et premiers secours ; priorité aux riverains ; place réservée aux femmes ; mécanisme de réclamation ouvert aux membres, aux riverains et aux détenteurs coutumiers, traité par le comité local de suivi dans un délai fixé.</p></div>
     </div>
 
-    <div class="encadre nuit"><strong>Filière semi-industrielle.</strong> 482 autorisations en cours de validité, presque toutes pour l'or, détenues surtout par des sociétés, dont beaucoup ne sont pas équipées. Elles livrent leurs concentrés au centre régional et reçoivent en échange achat public, service gratuit, crédit-bail, formation et conseil. Un régime transitoire de 24 mois au plus est proposé pour les exploitations déjà équipées. Leur production réelle n'est pas publiée : c'est l'inconnue à lever avant tout dimensionnement.</div>
+    <div class="encadre nuit"><strong>Filière semi-industrielle.</strong> 482 autorisations en cours de validité, presque toutes pour l'or, détenues surtout par des sociétés, dont beaucoup ne sont pas équipées. Elles livrent leurs concentrés au centre régional et reçoivent en échange achat public, service gratuit, crédit-bail, formation et conseil. Un régime transitoire de 24 mois au plus est proposé pour les exploitations déjà équipées. Leur production réelle n'est pas publiée : c'est l'inconnue à lever avant tout dimensionnement.</div>
   </div>
 </section>
 
@@ -603,7 +606,7 @@
   <div class="wrap">
     <div class="num">06 · Gouvernance et adhésion</div>
     <h2>Personne n'est à la merci d'un autre</h2>
-    <p class="intro">Un conseil national paritaire de la filière, créé par arrêté interministériel Mines–Finances : six voix pour l'État, six pour la profession ; la sécurité publique et la souveraineté sur l'or relèvent de la compétence propre de l'État. Double majorité pour la formule de prix, la contribution de filière, les règles de répartition, le passage obligé, l'ouverture d'un centre et les clés du fonds de soutien.</p>
+    <p class="intro">Un conseil national paritaire de la filière, créé par arrêté interministériel Mines–Finances : six voix pour l'État, six pour la profession ; la sécurité publique et la souveraineté sur l'or relèvent de la compétence propre de l'État. Double majorité pour la formule de prix, la contribution de filière, les règles de répartition, le passage obligé, l'ouverture d'un centre et les clés du fonds de soutien.</p>
 
     <div class="g2">
       <figure class="schema">
@@ -612,30 +615,30 @@
       </figure>
       <div>
         <h3>Le périmètre privé et la prévention des conflits d'intérêts</h3>
-        <p>MCS et ses partenaires privés n'interviennent qu'à Alépé : granulats, traitement du tout-venant des coopératives voisines, centre de formation, distribution de matériel.</p>
+        <p>MCS et ses partenaires privés n'interviennent qu'à Alépé : granulats, traitement du tout-venant des coopératives voisines, centre de formation, distribution de matériel.</p>
         <ul class="puces">
-          <li>Modules d'Alépé agréés et audités comme les centres régionaux ; convention approuvée sans vote de MCS</li>
-          <li>Centrale d'achat portée par la fédération ; MCS fournisseur référencé parmi d'autres</li>
-          <li>Grilles de matériel fixées par le comité technique ; formation multi-marques</li>
-          <li>MCS siège au conseil national avec voix consultative, au seul titre d'exploitant d'Alépé ; il ne prend part à aucun vote ni à aucune instruction de dossier qui le concerne</li>
+          <li>Modules d'Alépé agréés et audités comme les centres régionaux ; convention approuvée sans vote de MCS</li>
+          <li>Centrale d'achat portée par la fédération ; MCS fournisseur référencé parmi d'autres</li>
+          <li>Grilles de matériel fixées par le comité technique ; formation multi-marques</li>
+          <li>MCS siège au conseil national avec voix consultative, au seul titre d'exploitant d'Alépé ; il ne prend part à aucun vote ni à aucune instruction de dossier qui le concerne</li>
         </ul>
       </div>
     </div>
 
     <h3 style="margin-top:56px">Onze mécanismes d'adhésion</h3>
     <div class="g4">
-      <div class="carte"><span class="n">1</span><p><strong>Paiement immédiat</strong> — 75 % de la valeur estimée prudente du lot, le jour même, sur la carte de chaque membre ; solde à J+3</p></div>
+      <div class="carte"><span class="n">1</span><p><strong>Paiement immédiat</strong> — 75&nbsp;% de la valeur estimée prudente du lot, le jour même, sur la carte de chaque membre ; solde à J+3</p></div>
       <div class="carte"><span class="n">2</span><p><strong>Paiement éclaté</strong> — la coopérative ne détient jamais l'argent de ses membres</p></div>
       <div class="carte"><span class="n">3</span><p><strong>Prix au cours du jour</strong> et clause de compétitivité régionale</p></div>
       <div class="carte"><span class="n">4</span><p><strong>Compte à trois poches</strong> — disponible, épargne, protection</p></div>
-      <div class="carte"><span class="n">5</span><p><strong>Carte de l'orpailleur</strong> — identité professionnelle ; historique de production qui ouvre l'accès au crédit</p></div>
-      <div class="carte"><span class="n">6</span><p><strong>Intégration des informels</strong> — agents de collecte agréés ; préfinanceurs agréés, remboursés à la source à un coût plafonné ; fenêtre de régularisation de 24 mois</p></div>
+      <div class="carte"><span class="n">5</span><p><strong>Carte de l'orpailleur</strong> — identité professionnelle ; historique de production qui ouvre l'accès au crédit</p></div>
+      <div class="carte"><span class="n">6</span><p><strong>Intégration des informels</strong> — agents de collecte agréés ; préfinanceurs agréés, remboursés à la source à un coût plafonné ; fenêtre de régularisation de 24 mois</p></div>
       <div class="carte"><span class="n">7</span><p><strong>Gouvernance paritaire</strong> — double majorité État–profession</p></div>
       <div class="carte"><span class="n">8</span><p><strong>Stabilisateurs automatiques</strong> — seuils et réponses écrits à l'avance</p></div>
-      <div class="carte"><span class="n">9</span><p><strong>Prime or responsable</strong> — scénario : prime obtenue sur l'or certifié, reversée aux coopératives des paliers les plus élevés</p></div>
+      <div class="carte"><span class="n">9</span><p><strong>Prime or responsable</strong> — scénario : prime obtenue sur l'or certifié, reversée aux coopératives des paliers les plus élevés</p></div>
       <div class="carte"><span class="n">10</span><p><strong>Passerelle vers l'entreprise</strong> — de l'orpailleur recensé à la petite exploitation semi-industrielle</p></div>
       <div class="carte"><span class="n">11</span><p><strong>Caution de réhabilitation</strong> — restituée si la remise en état est certifiée</p></div>
-      <div class="carte" style="border-top-color:var(--blanc)"><p><strong>Référentiels visés</strong> — dispositif conçu pour être compatible avec la Convention de Minamata, le guide de l'OCDE sur le devoir de diligence et l'ITIE ; compatibilité à vérifier pendant le programme de vérification</p></div>
+      <div class="carte" style="border-top-color:var(--blanc)"><p><strong>Référentiels visés</strong> — dispositif conçu pour être compatible avec les objectifs de la Convention de Minamata, le guide de l'OCDE sur le devoir de diligence et les exigences de transparence de l'ITIE ; compatibilité à vérifier pendant le programme de vérification</p></div>
     </div>
 
     <h3 style="margin-top:56px">Un système qui se corrige seul</h3>
@@ -643,12 +646,12 @@
       <table class="tab">
         <thead><tr><th>Indicateur publié chaque mois</th><th>Seuil</th><th>Réponse automatique</th></tr></thead>
         <tbody>
-          <tr><td>Écart avec le meilleur prix officiel d'un pays voisin</td><td>&gt; 2 % pendant deux mois</td><td>Baisse de la décote ; compensation temporaire par la réserve</td></tr>
-          <tr><td>Délai moyen de paiement du solde</td><td>&gt; 5 jours</td><td>Pénalité versée aux titulaires ; plan correctif</td></tr>
-          <tr><td>Taux de contestation des pesées</td><td>&gt; 2 % des lots</td><td>Audit du centre ; rotation des agents</td></tr>
+          <tr><td>Écart avec le meilleur prix officiel d'un pays voisin</td><td>&gt; 2 % pendant deux mois</td><td>Baisse de la décote ; compensation temporaire par la réserve</td></tr>
+          <tr><td>Délai moyen de paiement du solde</td><td>&gt; 5 jours</td><td>Pénalité versée aux titulaires ; plan correctif</td></tr>
+          <tr><td>Taux de contestation des pesées</td><td>&gt; 2 % des lots</td><td>Audit du centre ; rotation des agents</td></tr>
           <tr><td>Or remis par un centre</td><td>&lt; 500 kg/an sur deux ans</td><td>Regroupement ou antenne mobile</td></tr>
-          <tr><td>Adhésion dans une région</td><td>Baisse sur deux trimestres</td><td>Mission d'écoute ; formation ; examen des prix locaux</td></tr>
-          <tr><td>Lots refusés pour mercure</td><td>&gt; 3 % dans une coopérative</td><td>Suspension de l'avance ; formation obligatoire</td></tr>
+          <tr><td>Adhésion dans une région</td><td>Baisse sur deux trimestres</td><td>Mission d'écoute ; formation ; examen des prix locaux</td></tr>
+          <tr><td>Lots refusés pour mercure</td><td>&gt; 3 % dans une coopérative</td><td>Suspension de l'avance ; formation obligatoire</td></tr>
           <tr><td>Réserve de stabilisation</td><td>Pleine</td><td>Baisse de la contribution de filière</td></tr>
         </tbody>
       </table>
@@ -671,32 +674,32 @@
       <button role="tab" aria-selected="false" data-p="pp-ind">Industrie</button>
     </div>
     <div class="panneau g2" id="pp-etat" role="tabpanel">
-      <div><h3>Ce qu'il apporte</h3><p>Un or déclaré, tracé et vendu dans le circuit officiel ; des taxes prélevées à la source ; zéro mercure ; une formalisation fondée sur l'accompagnement ; une assiette fiscale élargie sans dépense budgétaire ; l'accès permanent aux données.</p></div>
+      <div><h3>Ce qu'il apporte</h3><p>Un or déclaré, tracé et vendu dans le circuit officiel ; des taxes prélevées à la source ; zéro mercure ; une formalisation fondée sur l'accompagnement ; une assiette fiscale élargie sans dépense budgétaire ; l'accès permanent aux données.</p></div>
       <div><h3>Ce qu'il attend</h3><p>Un cadre juridique praticable, la création du conseil national paritaire, l'accord sur le fonds de filière et son compte séquestre, puis, le moment venu, le passage obligé.</p></div>
     </div>
     <div class="panneau g2" id="pp-snmp" role="tabpanel" hidden>
-      <div><h3>Ce qu'il apporte</h3><p>Un approvisionnement régulier et tracé ; un réseau de centres léger pour ≈ 0,7 % de la valeur de l'or, neutre pour ses comptes.</p></div>
+      <div><h3>Ce qu'il apporte</h3><p>Un approvisionnement régulier et tracé ; un réseau de centres léger pour ≈ 0,7 % de la valeur de l'or, neutre pour ses comptes.</p></div>
       <div><h3>Ce qu'il attend</h3><p>Direction des centres, formule de prix, avance au dépôt, paiement éclaté, contre-expertise, contribution de filière.</p></div>
     </div>
     <div class="panneau g2" id="pp-orp" role="tabpanel" hidden>
-      <div><h3>Ce qu'il apporte</h3><p>Un revenu visé de 500 000 à 600 000 FCFA par mois, ≈ 2,4 fois plus qu'aujourd'hui, payé le jour même avec un plancher ; épargne et protection sociale ; service gratuit, statut, formation, accès au matériel.</p></div>
+      <div><h3>Ce qu'il apporte</h3><p>Un revenu visé de 500 000 à 600 000 FCFA par mois, ≈ 2,4 fois plus qu'aujourd'hui, payé le jour même avec un plancher ; épargne et protection sociale ; service gratuit, statut, formation, accès au matériel.</p></div>
       <div><h3>Ce qu'il attend</h3><p>Pré-concentrer sans mercure, livrer une matière d'origine connue, passer par les centres.</p></div>
     </div>
     <div class="panneau g2" id="pp-semi" role="tabpanel" hidden>
-      <div><h3>Ce qu'il apporte</h3><p>Pour les non-équipées, le moyen de démarrer ; pour toutes, un acheteur public, un service gratuit, du crédit, de la formation et du conseil ; un régime transitoire pour les équipées.</p></div>
+      <div><h3>Ce qu'il apporte</h3><p>Pour les non-équipées, le moyen de démarrer ; pour toutes, un acheteur public, un service gratuit, du crédit, de la formation et du conseil ; un régime transitoire pour les équipées.</p></div>
       <div><h3>Ce qu'il attend</h3><p>Faire passer leur production par les centres.</p></div>
     </div>
     <div class="panneau g2" id="pp-com" role="tabpanel" hidden>
-      <div><h3>Ce qu'il apporte</h3><p>Collectivités, communautés et détenteurs coutumiers : parts versées selon une charte écrite ; emplois ; rivières moins polluées ; terres réhabilitées ; un comité local de suivi. Collecteurs et financeurs de chantiers aujourd'hui informels : une place légale, comme agents de collecte agréés, rémunérés à la commission, ou comme préfinanceurs agréés, remboursés à la source.</p></div>
-      <div><h3>Ce qu'il attend</h3><p>Participation au comité local, appui à la médiation ; respect des règles et du plafond de coût du préfinancement.</p></div>
+      <div><h3>Ce qu'il apporte</h3><p>Collectivités, communautés et détenteurs coutumiers : parts versées selon une charte écrite ; emplois ; rivières moins polluées ; terres réhabilitées ; un comité local de suivi. Collecteurs et financeurs de chantiers aujourd'hui informels : une place légale, comme agents de collecte agréés, rémunérés à la commission, ou comme préfinanceurs agréés, remboursés à la source.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Participation au comité local, appui à la médiation ; respect des règles et du plafond de coût du préfinancement.</p></div>
     </div>
     <div class="panneau g2" id="pp-fin" role="tabpanel" hidden>
-      <div><h3>Ce qu'il apporte</h3><p>Banques : des emprunteurs formés, à production connue et remboursement prélevé à la source. Bailleurs : un effet de levier, un dispositif qui se finance ensuite seul, un impact mesurable sur le mercure et la formalisation.</p></div>
-      <div><h3>Ce qu'il attend</h3><p>Des produits de crédit-bail adaptés ; l'amorçage du fonds de filière, un fonds de garantie, le programme de vérification et le pilote.</p></div>
+      <div><h3>Ce qu'il apporte</h3><p>Banques : des emprunteurs formés, à production connue et remboursement prélevé à la source. Bailleurs : un effet de levier, un dispositif qui se finance ensuite seul, un impact mesurable sur le mercure et la formalisation.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Des produits de crédit-bail adaptés ; l'amorçage du fonds de filière, un fonds de garantie, le programme de vérification et le pilote.</p></div>
     </div>
     <div class="panneau g2" id="pp-ind" role="tabpanel" hidden>
-      <div><h3>Ce qu'il apporte</h3><p>Fabricants : un site de démonstration, un réseau de maintenance, un débouché mutualisé dans un cadre neutre. BTP : des granulats alluvionnaires de proximité depuis Alépé.</p></div>
-      <div><h3>Ce qu'il attend</h3><p>Sponsoring du site de formation, prix et disponibilité des pièces ; contrats d'enlèvement de granulats.</p></div>
+      <div><h3>Ce qu'il apporte</h3><p>Fabricants : un site de démonstration, un réseau de maintenance, un débouché mutualisé dans un cadre neutre. BTP : des granulats alluvionnaires de proximité depuis Alépé.</p></div>
+      <div><h3>Ce qu'il attend</h3><p>Sponsoring du site de formation, prix et disponibilité des pièces ; contrats d'enlèvement de granulats.</p></div>
     </div>
   </div>
 </section>
@@ -706,29 +709,29 @@
   <div class="wrap">
     <div class="num">08 · La démarche</div>
     <h2>Vérifier avant d'investir</h2>
-    <p class="intro">Le concept et l'organisation sont définis ; ils ne sont pas encore démontrés. Chaque étape a une condition de passage fixée à l'avance.</p>
+    <p class="intro">Le concept et l'organisation sont définis ; ils ne sont pas encore démontrés. Chaque étape a une condition de passage fixée à l'avance.</p>
     <div class="frise">
-      <div><span class="e">Étape 1</span><h3>Programme de vérification</h3><p>Ingénieur indépendant ; essais de laboratoire ; enquête de terrain ; analyse juridique ; données semi-industrielles.</p><p class="cond">Récupération confirmée ; cadre praticable ; accord de principe sur le fonds de filière.</p></div>
-      <div><span class="e">Étape 2</span><h3>Unité pilote à Alépé</h3><p>10 à 20 t/h ; coopératives volontaires ; premiers kits ; 6 à 12 mois.</p><p class="cond">Critères fixés à l'avance : récupération, apports, revenus, incidents.</p></div>
-      <div><span class="e">Étape 3</span><h3>Carrière mixte d'Alépé</h3><p>Granulats ; centre de formation ; premier module de 60 t/h si apports contractualisés.</p><p class="cond">Autorisation, étude d'impact, accord foncier.</p></div>
-      <div><span class="e">Étape 4</span><h3>Premier centre régional</h3><p>Bocanda, bassin le plus dense en autorisations, avec des titulaires volontaires.</p><p class="cond">Pilote concluant ; direction des centres en place ou gestionnaire transitoire ; conseil national installé ; fonds de filière amorcé ; fonds de garantie en place.</p></div>
-      <div><span class="e">Étape 5</span><h3>Déploiement</h3><p>Yamoussoukro, Bouaké, Adzopé, puis Soubré, M'Bahiakro, Bondoukou, le nord.</p><p class="cond">Résultats du premier centre ; prix jugé équitable par les titulaires ; analyse sécuritaire pour le nord.</p></div>
+      <div><span class="e">Étape 1</span><h3>Programme de vérification</h3><p>Ingénieur indépendant ; essais de laboratoire ; enquête de terrain ; analyse juridique ; données semi-industrielles.</p><p class="cond">Récupération confirmée ; cadre praticable ; accord de principe sur le fonds de filière.</p></div>
+      <div><span class="e">Étape 2</span><h3>Unité pilote à Alépé</h3><p>10 à 20 t/h ; coopératives volontaires ; premiers kits ; 6 à 12 mois.</p><p class="cond">Critères fixés à l'avance : récupération, apports, revenus, incidents.</p></div>
+      <div><span class="e">Étape 3</span><h3>Carrière mixte d'Alépé</h3><p>Granulats ; centre de formation ; premier module de 60 t/h si apports contractualisés.</p><p class="cond">Autorisation, étude d'impact, accord foncier.</p></div>
+      <div><span class="e">Étape 4</span><h3>Premier centre régional</h3><p>Bocanda, bassin le plus dense en autorisations, avec des titulaires volontaires.</p><p class="cond">Pilote concluant ; direction des centres en place ou gestionnaire transitoire ; conseil national installé ; fonds de filière amorcé ; fonds de garantie en place.</p></div>
+      <div><span class="e">Étape 5</span><h3>Déploiement</h3><p>Yamoussoukro, Bouaké, Adzopé, puis Soubré, M'Bahiakro, Bondoukou, le nord.</p><p class="cond">Résultats du premier centre ; prix jugé équitable par les titulaires ; analyse sécuritaire pour le nord.</p></div>
     </div>
 
     <h3 style="margin-top:56px">Principaux risques et parades</h3>
     <div class="g2" style="gap:24px">
       <div>
-        <details class="risque"><summary>Teneur réelle inférieure aux attentes <em>Économique</em></summary><p>Aucune projection de revenu avant les essais ; charte en pourcentages ; plancher porté par les réserves.</p></details>
-        <details class="risque"><summary>Récupération gravimétrique inférieure aux attentes, pertes d'or fin à la pré-concentration <em>Technique</em></summary><p>Essais en laboratoire, puis pilote avant tout engagement ; essais distincts alluvions / latérites et saprolites, dont l'or est souvent plus fin.</p></details>
+        <details class="risque"><summary>Teneur réelle inférieure aux attentes <em>Économique</em></summary><p>Aucune projection de revenu avant les essais ; charte en pourcentages ; plancher porté par les réserves.</p></details>
+        <details class="risque"><summary>Récupération gravimétrique inférieure aux attentes, pertes d'or fin à la pré-concentration <em>Technique</em></summary><p>Essais en laboratoire, puis pilote avant tout engagement ; essais distincts alluvions / latérites et saprolites, dont l'or est souvent plus fin.</p></details>
         <details class="risque"><summary>Or d'origine illégale présenté aux centres <em>Juridique</em></summary><p>Rattachement de chaque lot à une autorisation, cohérence avec la production déclarée et la capacité du matériel, suivi satellitaire, contrôles inopinés.</p></details>
-        <details class="risque"><summary>Capture de la valeur par des dirigeants ou un financeur <em>Social</em></summary><p>Paiement éclaté à la source ; préfinancement plafonné ; audit annuel.</p></details>
-        <details class="risque"><summary>Prix d'achat de l'État jugé insuffisant <em>Marché</em></summary><p>Prix au cours du jour ; clause de compétitivité régionale ; avance au dépôt ; contreparties que l'informel n'offre pas.</p></details>
+        <details class="risque"><summary>Capture de la valeur par des dirigeants ou un financeur <em>Social</em></summary><p>Paiement éclaté à la source ; préfinancement plafonné ; audit annuel.</p></details>
+        <details class="risque"><summary>Prix d'achat de l'État jugé insuffisant <em>Marché</em></summary><p>Prix au cours du jour ; clause de compétitivité régionale ; avance au dépôt ; contreparties que l'informel n'offre pas.</p></details>
       </div>
       <div>
-        <details class="risque"><summary>Cadre juridique défavorable ou retardé <em>Réglementaire</em></summary><p>Dialogue précoce avec l'administration ; pilote sur des coopératives déjà titulaires ; adhésion volontaire.</p></details>
+        <details class="risque"><summary>Cadre juridique défavorable ou retardé <em>Réglementaire</em></summary><p>Dialogue précoce avec l'administration ; pilote sur des coopératives déjà titulaires ; adhésion volontaire.</p></details>
         <details class="risque"><summary>Retard de la filière nationale <em>Institutionnel</em></summary><p>Acheteur agréé transitoire désigné par l'État.</p></details>
-        <details class="risque"><summary>Contribution de filière refusée <em>Institutionnel</em></summary><p>Contribution réduite à 0,5 % ; démonstration de l'économie réalisée ; à défaut, fraction de la redevance affectée par la loi de finances.</p></details>
-        <details class="risque"><summary>Opposition des collecteurs, financeurs et chefs de sites informels <em>Social et sécuritaire</em></summary><p>Agents de collecte et préfinanceurs agréés ; fenêtre de régularisation de 24 mois ; formation ouverte à tous ; comité local ; appui des autorités et des chefferies.</p></details>
+        <details class="risque"><summary>Contribution de filière refusée <em>Institutionnel</em></summary><p>Contribution réduite à 0,5 % ; démonstration de l'économie réalisée ; à défaut, fraction de la redevance affectée par la loi de finances.</p></details>
+        <details class="risque"><summary>Opposition des collecteurs, financeurs et chefs de sites informels <em>Social et sécuritaire</em></summary><p>Agents de collecte et préfinanceurs agréés ; fenêtre de régularisation de 24 mois ; formation ouverte à tous ; comité local ; appui des autorités et des chefferies.</p></details>
         <details class="risque"><summary>Approvisionnement insuffisant d'Alépé <em>Économique</em></summary><p>Investissement par modules, conditionné aux apports contractualisés.</p></details>
       </div>
     </div>
@@ -740,26 +743,26 @@
   <div class="wrap">
     <div class="num">09 · Objectifs et ordres de grandeur</div>
     <h2>10 tonnes d'or par an, avec les deux filières</h2>
-    <p class="intro">≈ 10 % de la capacité annoncée de l'unité nationale d'affinage ; au cours retenu de 4 000 USD l'once, une valeur approchant 730 Md FCFA par an. Ces objectifs reposent sur des hypothèses non encore mesurées (teneur, récupération, productivité, production semi-industrielle) et seront recalés à chaque étape. L'objectif de 10 t n'est pas une projection : c'est la cible autour de laquelle le réseau sera dimensionné, une fois la production semi-industrielle connue.</p>
+    <p class="intro">≈ 10 % de la capacité annoncée de l'unité nationale d'affinage ; au cours retenu de 4 000 USD l'once, une valeur approchant 730 Md FCFA par an. Ces objectifs reposent sur des hypothèses non encore mesurées (teneur, récupération, productivité, production semi-industrielle) et seront recalés à chaque étape. L'objectif de 10 t n'est pas une projection : c'est la cible autour de laquelle le réseau sera dimensionné, une fois la production semi-industrielle connue.</p>
     <div class="g2">
       <div>
         <div class="scroll">
           <table class="tab">
             <thead><tr><th>Filière</th><th>Contribution visée</th><th>Ce qu'elle suppose</th></tr></thead>
             <tbody>
-              <tr><td>Artisanale</td><td>≈ 3 t/an (1,8 à 3,8 t)</td><td>20 000 orpailleurs formés en 10 ans, équipés et adhérents</td></tr>
-              <tr><td>Semi-industrielle</td><td>≈ 7 t/an</td><td>Équipement et raccordement des exploitations sur matériaux meubles ; ordre de grandeur : ≈ 15 kg/an en moyenne pour chacune des ≈ 480 autorisations valides, hypothèse à vérifier sur les données de l'administration</td></tr>
-              <tr><td>Total</td><td>≈ 10 t/an</td><td>Une dizaine de centres régionaux d'≈ 1 t/an chacun</td></tr>
+              <tr><td>Artisanale</td><td>≈ 3 t/an (1,8 à 3,8 t)</td><td>20 000 orpailleurs formés en 10 ans, équipés et adhérents</td></tr>
+              <tr><td>Semi-industrielle</td><td>≈ 7 t/an</td><td>Équipement et raccordement des exploitations sur matériaux meubles ; ordre de grandeur : ≈ 15 kg/an en moyenne pour chacune des ≈ 480 autorisations valides, hypothèse à vérifier sur les données de l'administration</td></tr>
+              <tr><td>Total</td><td>≈ 10 t/an</td><td>Une dizaine de centres régionaux d'≈ 1 t/an chacun</td></tr>
             </tbody>
           </table>
         </div>
         <h3 style="margin-top:32px">Principe de financement</h3>
         <ul class="puces">
-          <li>Carrière mixte d'Alépé : base commerciale, portée par la vente de granulats</li>
-          <li>Centres régionaux : société nationale, sur sa décote ; cofinancement possible des bailleurs</li>
-          <li>Matériel des titulaires : crédit-bail bancaire, fonds de garantie des bailleurs</li>
-          <li>Centre de formation : financement mixte, 50 % de l'investissement subventionné</li>
-          <li>Fonds de filière : avance remboursable ≈ 1,5 Md FCFA, remboursée des années 4 à 6 ; puis ≈ 2,2 Md FCFA/an pour le soutien à la filière en régime</li>
+          <li>Carrière mixte d'Alépé : base commerciale, portée par la vente de granulats</li>
+          <li>Centres régionaux : société nationale, sur sa décote ; cofinancement possible des bailleurs</li>
+          <li>Matériel des titulaires : crédit-bail bancaire, fonds de garantie des bailleurs</li>
+          <li>Centre de formation : financement mixte, 50 % de l'investissement subventionné</li>
+          <li>Fonds de filière : avance remboursable ≈ 1,5 Md FCFA, remboursée des années 4 à 6 ; puis ≈ 2,2 Md FCFA/an pour le soutien à la filière en régime</li>
         </ul>
       </div>
       <div>
@@ -768,14 +771,14 @@
             <thead><tr><th>Composante</th><th>Investissement estimé</th></tr></thead>
             <tbody>
               <tr><td>Programme de vérification</td><td>300 à 580 M FCFA sur 12 mois</td></tr>
-              <tr><td>Unité pilote (10–20 t/h)</td><td>≈ 400 M FCFA</td></tr>
-              <tr><td>Alépé : granulats</td><td>3,6 à 5,5 Md FCFA</td></tr>
-              <tr><td>Alépé : tout-venant, 2 × 60 t/h</td><td>1,8 à 2,5 Md FCFA, module par module</td></tr>
-              <tr><td>Centre de formation</td><td>≈ 475 M FCFA (50 % subventionné) ; ≈ 240 M FCFA/an de fonctionnement</td></tr>
-              <tr><td>Centre régional (léger)</td><td>≈ 0,5 Md FCFA ; ≈ 5 Md pour dix centres sur sept ans</td></tr>
+              <tr><td>Unité pilote (10–20 t/h)</td><td>≈ 400 M FCFA</td></tr>
+              <tr><td>Alépé : granulats</td><td>3,6 à 5,5 Md FCFA</td></tr>
+              <tr><td>Alépé : tout-venant, 2 × 60 t/h</td><td>1,8 à 2,5 Md FCFA, module par module</td></tr>
+              <tr><td>Centre de formation</td><td>≈ 475 M FCFA (50 % subventionné) ; ≈ 240 M FCFA/an de fonctionnement</td></tr>
+              <tr><td>Centre régional (léger)</td><td>≈ 0,5 Md FCFA ; ≈ 5 Md pour dix centres sur sept ans</td></tr>
               <tr><td>Registre de lots numérique</td><td>60 à 120 M FCFA sur 3 ans</td></tr>
-              <tr><td>Amorçage du fonds de filière</td><td>≈ 1,5 Md FCFA</td></tr>
-              <tr><td>Fonds de roulement des avances</td><td>≈ 4,4 Md FCFA, porté par la société nationale</td></tr>
+              <tr><td>Amorçage du fonds de filière</td><td>≈ 1,5 Md FCFA</td></tr>
+              <tr><td>Fonds de roulement des avances</td><td>≈ 4,4 Md FCFA, porté par la société nationale</td></tr>
               <tr><td>Fonds de garantie, centrale d'achat</td><td>À dimensionner</td></tr>
             </tbody>
           </table>
@@ -791,7 +794,7 @@
   <div class="wrap">
     <div class="num">10 · Ce que nous proposons</div>
     <h2>Ce que nous demandons aujourd'hui n'est pas un financement</h2>
-    <p class="intro" style="color:var(--noir)">C'est d'abord un dialogue, à un stade où le dispositif peut encore être amendé : un premier entretien avec chacun, puis un groupe de travail restreint, préfiguration du conseil national de la filière, pour suivre le programme de vérification et préparer le pilote.</p>
+    <p class="intro" style="color:var(--noir)">C'est d'abord un dialogue, à un stade où le dispositif peut encore être amendé : un premier entretien avec chacun, puis un groupe de travail restreint, préfiguration du conseil national de la filière, pour suivre le programme de vérification et préparer le pilote.</p>
     <div class="scroll" style="border-color:var(--noir)">
       <table class="tab">
         <thead><tr><th>Interlocuteur</th><th>Proposition</th></tr></thead>
@@ -800,11 +803,11 @@
           <tr><td>Société nationale des métaux précieux</td><td>Direction des centres, formule de prix, avance au dépôt, paiement éclaté, contre-expertise, contribution de filière, registre des lots</td></tr>
           <tr><td>Ministère chargé des finances</td><td>Le fonds de filière, son compte séquestre et l'absence de dépense budgétaire</td></tr>
           <tr><td>SODEMI (société d'État de développement minier)</td><td>Les données géologiques des zones ciblées</td></tr>
-          <tr><td>Coopératives et titulaires</td><td>Titulaires volontaires pour le pilote et le premier centre ; représentation au conseil national</td></tr>
+          <tr><td>Coopératives et titulaires</td><td>Titulaires volontaires pour le pilote et le premier centre ; représentation au conseil national</td></tr>
           <tr><td>Opérateurs de paiement</td><td>Paiement sur la carte de l'orpailleur, paiement éclaté et épargne</td></tr>
           <tr><td>Banques et sociétés de crédit-bail</td><td>Produit de crédit-bail remboursé à la source</td></tr>
           <tr><td>Fabricants</td><td>Démonstration, formation et sponsoring, dans un cadre de neutralité</td></tr>
-          <tr><td>Partenaires financiers</td><td>Programme de vérification et pilote ; amorçage du fonds de filière (≈ 1,5 Md FCFA) ; fonds de garantie du crédit aux titulaires</td></tr>
+          <tr><td>Partenaires financiers</td><td>Programme de vérification et pilote ; amorçage du fonds de filière (≈ 1,5 Md FCFA) ; fonds de garantie du crédit aux titulaires</td></tr>
         </tbody>
       </table>
     </div>
@@ -818,7 +821,7 @@
 <footer>
   <div class="wrap">
     <div><strong>Mines et Carrières Services</strong> — Abidjan<br>La carrière mixte · Document de présentation, version 7 · octobre 2026</div>
-    <div style="max-width:560px">Document confidentiel — document de concept, ne vaut ni offre ni avis juridique. Les chiffres sont des ordres de grandeur issus de sources publiques ; ils renvoient au modèle économique de la filière V4, au document « Le système de la filière » V1 et aux règles de répartition V3, et sont à recaler sur le programme de vérification. Photos à caractère illustratif.</div>
+    <div style="max-width:560px">Document confidentiel — document de concept, ne vaut ni offre ni avis juridique. Les chiffres sont des ordres de grandeur issus de sources publiques et du modèle économique de la filière V4 ; ils renvoient aussi au document « Le système de la filière » V1 et aux règles de répartition V3, et sont à recaler sur le programme de vérification. Photos à caractère illustratif.</div>
   </div>
 </footer>
 
