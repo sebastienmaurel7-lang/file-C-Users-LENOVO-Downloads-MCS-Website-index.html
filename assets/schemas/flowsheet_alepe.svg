@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="1188" viewBox="0 0 840 1188"><defs><marker id="ah1E3A5F" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#1E3A5F"/></marker><marker id="ah000000" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#000000"/></marker><marker id="ah555555" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#555555"/></marker></defs><rect width="840" height="1188" fill="#FAFAF5"/><rect x="0" y="0" width="840" height="12" fill="#1E3A5F"/><text x="50" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="25" font-weight="bold" fill="#1E3A5F">1 — Carrière mixte d'Alépé, cœur du dispositif</text><text x="50" y="96" font-family="Liberation Sans, Arial, sans-serif" font-size="15" fill="#000000">Deux flux de tout-venant qui ne se croisent jamais, un seul poste de finition mutualisé</text><line x1="50" y1="116" x2="790" y2="116" stroke="#1E3A5F" stroke-width="1.5"/>
+<rect x="60" y="150" width="340" height="72" rx="6" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="1.5"/>
+<text x="230.0" y="181.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#FFFFFF">Gisement de la gravière</text>
+<text x="230.0" y="201.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#DCE4EE">Terrasse alluvionnaire, parcelles de 50 ha</text>
+<rect x="440" y="150" width="340" height="72" rx="6" fill="#F7C948" stroke="#F7C948" stroke-width="1.5"/>
+<text x="610.0" y="181.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#1E3A5F">Coopératives voisines</text>
+<text x="610.0" y="201.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#1E3A5F">Tout-venant brut : alluvions, latérites</text>
+<path d="M230 222 L230 266" fill="none" stroke="#1E3A5F" stroke-width="2.4" marker-end="url(#ah1E3A5F)"/>
+<path d="M610 222 L610 266" fill="none" stroke="#000000" stroke-width="2.4" marker-end="url(#ah000000)"/>
+<rect x="60" y="270" width="340" height="72" rx="6" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="1.5"/>
+<text x="230.0" y="301.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#FFFFFF">Installation 1 — gravière</text>
+<text x="230.0" y="321.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#DCE4EE">Découverte, lavage, criblage</text>
+<rect x="440" y="270" width="340" height="72" rx="6" fill="#F7C948" stroke="#F7C948" stroke-width="1.5"/>
+<text x="610.0" y="301.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#1E3A5F">Réception et bordereau de lot</text>
+<text x="610.0" y="321.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#1E3A5F">Pesée, échantillon, test mercure, scellé</text>
+<path d="M140 342 L140 386" fill="none" stroke="#1E3A5F" stroke-width="2.4" marker-end="url(#ah1E3A5F)"/>
+<path d="M320 342 L320 386" fill="none" stroke="#1E3A5F" stroke-width="2.4" marker-end="url(#ah1E3A5F)"/>
+<path d="M610 342 L610 386" fill="none" stroke="#000000" stroke-width="2.4" marker-end="url(#ah000000)"/>
+<rect x="60" y="390" width="160" height="72" rx="6" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="1.5"/>
+<text x="140.0" y="421.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#FFFFFF">Granulats BTP</text>
+<text x="140.0" y="441.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#DCE4EE">Marché d'Abidjan</text>
+<rect x="240" y="390" width="160" height="72" rx="6" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="1.5"/>
+<text x="320.0" y="421.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#FFFFFF">Fines aurifères</text>
+<text x="320.0" y="441.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#DCE4EE">Couche de base</text>
+<rect x="440" y="390" width="340" height="72" rx="6" fill="#F7C948" stroke="#F7C948" stroke-width="1.5"/>
+<text x="610.0" y="421.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#1E3A5F">Installation 2 — 2 × 60 t/h</text>
+<text x="610.0" y="441.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#1E3A5F">Modules alluvions et latérites, sans mercure</text>
+<path d="M520 462 L520 506" fill="none" stroke="#000000" stroke-width="2.4" marker-end="url(#ah000000)"/>
+<path d="M700 462 L700 506" fill="none" stroke="#000000" stroke-width="2.4" marker-end="url(#ah000000)"/>
+<rect x="440" y="510" width="160" height="72" rx="6" fill="#F7C948" stroke="#F7C948" stroke-width="1.5"/>
+<text x="520.0" y="541.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#1E3A5F">Graviers lavés</text>
+<text x="520.0" y="561.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#1E3A5F">Valorisés en BTP</text>
+<rect x="620" y="510" width="160" height="72" rx="6" fill="#F7C948" stroke="#F7C948" stroke-width="1.5"/>
+<text x="700.0" y="541.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#1E3A5F">Concentré</text>
+<text x="700.0" y="561.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#1E3A5F">Lot par lot</text>
+<path d="M320 462 L320 626" fill="none" stroke="#1E3A5F" stroke-width="2.4" marker-end="url(#ah1E3A5F)"/>
+<path d="M700 582 L700 604 L560 604 L560 626" fill="none" stroke="#000000" stroke-width="2.4" marker-end="url(#ah000000)"/>
+<rect x="220" y="630" width="400" height="96" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+<text x="420.0" y="663.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#000000">Poste de finition commun</text>
+<text x="420.0" y="684.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#333333">Centrifugeuse + table à secousses</text>
+<text x="420.0" y="703.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#333333">Campagnes alternées, purge, bilan matière</text>
+<path d="M320 726 L320 776" fill="none" stroke="#1E3A5F" stroke-width="2.4" marker-end="url(#ah1E3A5F)"/>
+<path d="M520 726 L520 776" fill="none" stroke="#000000" stroke-width="2.4" marker-end="url(#ah000000)"/>
+<rect x="60" y="780" width="340" height="72" rx="6" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="1.5"/>
+<text x="230.0" y="811.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#FFFFFF">Or brut du site</text>
+<text x="230.0" y="831.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#DCE4EE">Sous réserve de titre minier</text>
+<rect x="440" y="780" width="340" height="72" rx="6" fill="#F7C948" stroke="#F7C948" stroke-width="1.5"/>
+<text x="610.0" y="811.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#1E3A5F">Or brut de la coopérative</text>
+<text x="610.0" y="831.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#1E3A5F">Pesé, titré, scellé — non acheté par le site</text>
+<path d="M320 852 L320 896" fill="none" stroke="#1E3A5F" stroke-width="2.4" marker-end="url(#ah1E3A5F)"/>
+<path d="M520 852 L520 896" fill="none" stroke="#000000" stroke-width="2.4" marker-end="url(#ah000000)"/>
+<rect x="220" y="900" width="400" height="72" rx="6" fill="#000000" stroke="#000000" stroke-width="1.5"/>
+<text x="420.0" y="931.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#FFFFFF">Société nationale des métaux précieux</text>
+<text x="420.0" y="951.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#DDDDDD">Acheteur de l'État, lots achetés séparément</text>
+<rect x="60" y="1010" width="720" height="72" rx="6" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="2"/>
+<text x="420.0" y="1041.3" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#1E3A5F">Installation 3 — centre de formation et d'appui, cœur du dispositif</text>
+<text x="420.0" y="1061.8" text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" fill="#1E3A5F">Formation, certification, démonstration, maintenance, centrale d'achat</text>
+<rect x="50" y="1110" width="22" height="16" rx="3" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="1.5"/>
+<text x="80" y="1123" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#000000">Flux du site</text>
+<rect x="194" y="1110" width="22" height="16" rx="3" fill="#F7C948" stroke="#F7C948" stroke-width="1.5"/>
+<text x="224" y="1123" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#000000">Flux des coopératives</text>
+<rect x="401" y="1110" width="22" height="16" rx="3" fill="#FFFFFF" stroke="#000000" stroke-width="1.5"/>
+<text x="431" y="1123" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#000000">Mutualisé</text>
+<rect x="524" y="1110" width="22" height="16" rx="3" fill="#000000" stroke="#000000" stroke-width="1.5"/>
+<text x="554" y="1123" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#000000">État</text>
+<line x1="50" y1="1142" x2="790" y2="1142" stroke="#1E3A5F" stroke-width="0.8"/><text x="50" y="1162" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#444444">Carrière mixte d'Alépé (Basse Comoé), cœur du dispositif — version 7</text><text x="790" y="1162" text-anchor="end" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#444444">Schéma de principe — octobre 2026</text></svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1500" viewBox="0 0 1600 1500" font-family="Liberation Sans, Arial, sans-serif">
+<rect width="1600" height="1500" fill="white"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1E3A5F"/></marker></defs>
+<text x="60" y="62" font-size="36" font-weight="bold" fill="#1E3A5F">Organigramme de gouvernance de la filière</text>
+<rect x="60" y="80" width="140" height="7" fill="#F7C948"/>
+<text x="60" y="140" font-size="20" font-weight="bold" fill="#6B7280" letter-spacing="2">TUTELLE</text>
+<rect x="60" y="155" width="480" height="110" rx="10" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="300.0" y="196.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="white">Ministère des Mines</text>
+<text x="300.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#D6E0EC">Tutelle technique, préside</text>
+<rect x="560" y="155" width="480" height="110" rx="10" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="800.0" y="196.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="white">Ministère des Finances</text>
+<text x="800.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#D6E0EC">Tutelle du fonds de filière</text>
+<rect x="1060" y="155" width="480" height="110" rx="10" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="1300.0" y="196.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="white">Ministères associés</text>
+<text x="1300.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#D6E0EC">Environnement, formation, santé, sécurité</text>
+<path d="M300 265 L300 295" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M800 265 L800 295" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M1300 265 L1300 295" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M300 295 L1300 295" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M560 295 L560 328" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="60" y="320" font-size="20" font-weight="bold" fill="#6B7280" letter-spacing="2">PILOTAGE</text>
+<rect x="60" y="330" width="1000" height="110" rx="10" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="560.0" y="371.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="white">Conseil national de la filière</text>
+<text x="560.0" y="405.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#D6E0EC">Paritaire État–profession ; décisions structurantes à double majorité</text>
+<path d="M1060 385 L1100 385" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<rect x="1100" y="330" width="440" height="110" rx="10" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="1320.0" y="371.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="white">Unité de gestion</text>
+<text x="1320.0" y="405.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#D6E0EC">Secrétariat indépendant</text>
+<path d="M560 440 L560 470" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M300 470 L1300 470" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M300 470 L300 503" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M800 470 L800 503" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1300 470 L1300 503" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="60" y="505" width="480" height="110" rx="10" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="300.0" y="546.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="white">Comité technique</text>
+<text x="300.0" y="580.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#D6E0EC">Normes, paliers, agréments</text>
+<rect x="560" y="505" width="480" height="110" rx="10" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="800.0" y="546.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="white">Comité d&#39;attribution</text>
+<text x="800.0" y="580.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#D6E0EC">Fonds de soutien à la filière</text>
+<rect x="1060" y="505" width="480" height="110" rx="10" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="1300.0" y="546.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="white">Comité d&#39;audit et des risques</text>
+<text x="1300.0" y="580.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#D6E0EC">Contrôle, fraude, contre-expertise</text>
+<path d="M300 615 L300 645" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M800 615 L800 645" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M1300 615 L1300 645" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M212 645 L1300 645" fill="none" stroke="#1E3A5F" stroke-width="2.5"/>
+<path d="M215 645 L215 708" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M605 645 L605 708" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1190 645 L1190 708" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="60" y="710" width="310" height="130" rx="10" fill="#F7C948" stroke="#1E3A5F" stroke-width="2.5" stroke-dasharray="10 6"/>
+<text x="215.0" y="733.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="#1E3A5F">Pôle d&#39;Alépé</text>
+<text x="215.0" y="767.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#1E3A5F">MCS et partenaires</text>
+<text x="215.0" y="795.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#1E3A5F">granulats, formation,</text>
+<text x="215.0" y="823.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#1E3A5F">matériel</text>
+<rect x="450" y="710" width="310" height="130" rx="10" fill="white" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="605.0" y="747.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="#1E3A5F">Fonds de filière</text>
+<text x="605.0" y="781.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#3B4A5C">Compte séquestre</text>
+<text x="605.0" y="809.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#3B4A5C">agent fiduciaire</text>
+<rect x="840" y="710" width="700" height="130" rx="10" fill="white" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="1190.0" y="747.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="#1E3A5F">Société nationale des métaux précieux</text>
+<text x="1190.0" y="781.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#3B4A5C">Achète et paie l&#39;or ; collecte ; affinage</text>
+<text x="1190.0" y="809.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#3B4A5C">Direction des centres régionaux (pesée, traitement)</text>
+<path d="M215 918 L215 842" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1190 842 L1190 918" fill="none" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="60" y="920" width="480" height="120" rx="10" fill="#FAFAF5" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="300.0" y="966.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="#1E3A5F">Coopératives et fédération</text>
+<text x="300.0" y="1000.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#3B4A5C">Orpailleurs membres, carte d&#39;orpailleur</text>
+<rect x="560" y="920" width="480" height="120" rx="10" fill="#FAFAF5" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="800.0" y="966.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="#1E3A5F">Comités locaux de suivi</text>
+<text x="800.0" y="1000.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#3B4A5C">Coutumiers, collectivités, services</text>
+<rect x="1060" y="920" width="480" height="120" rx="10" fill="#FAFAF5" stroke="#1E3A5F" stroke-width="2.5"/>
+<text x="1300.0" y="966.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="#1E3A5F">Semi-industriels</text>
+<text x="1300.0" y="1000.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#3B4A5C">Sociétés titulaires, groupement</text>
+<text x="60" y="1105" font-size="20" font-weight="bold" fill="#6B7280" letter-spacing="2">CONTRÔLE EXTERNE ET PARTENAIRES</text>
+<rect x="60" y="1120" width="730" height="150" rx="10" fill="white" stroke="#6B7280" stroke-width="2.5" stroke-dasharray="4 4"/>
+<text x="425.0" y="1167.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="#374151">Contrôle externe</text>
+<text x="425.0" y="1201.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#6B7280">Auditeur indépendant, ITIE, cellule anti-blanchiment,</text>
+<text x="425.0" y="1229.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#6B7280">laboratoire de référence, suivi satellitaire</text>
+<rect x="810" y="1120" width="730" height="150" rx="10" fill="white" stroke="#6B7280" stroke-width="2.5" stroke-dasharray="4 4"/>
+<text x="1175.0" y="1167.0" text-anchor="middle" dominant-baseline="central" font-size="27" font-weight="bold" fill="#374151">Partenaires</text>
+<text x="1175.0" y="1201.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#6B7280">Bailleurs, banques, fonds de garantie,</text>
+<text x="1175.0" y="1229.0" text-anchor="middle" dominant-baseline="central" font-size="21" fill="#6B7280">universités, société d&#39;État de développement minier</text>
+<rect x="60" y="1310" width="34" height="24" rx="4" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="2"/>
+<text x="106" y="1322" dominant-baseline="central" font-size="21" fill="#374151">Gouvernance publique</text>
+<rect x="360" y="1310" width="34" height="24" rx="4" fill="white" stroke="#1E3A5F" stroke-width="2"/>
+<text x="406" y="1322" dominant-baseline="central" font-size="21" fill="#374151">Mise en œuvre publique</text>
+<rect x="660" y="1310" width="34" height="24" rx="4" fill="#F7C948" stroke="#1E3A5F" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="706" y="1322" dominant-baseline="central" font-size="21" fill="#374151">Périmètre privé MCS</text>
+<rect x="960" y="1310" width="34" height="24" rx="4" fill="#FAFAF5" stroke="#1E3A5F" stroke-width="2"/>
+<text x="1006" y="1322" dominant-baseline="central" font-size="21" fill="#374151">Producteurs, territoires</text>
+<rect x="1260" y="1310" width="34" height="24" rx="4" fill="white" stroke="#6B7280" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="1306" y="1322" dominant-baseline="central" font-size="21" fill="#374151">Contrôle, partenaires</text>
+<text x="60" y="1385" font-size="20" fill="#6B7280">Les flèches indiquent l'encadrement. Les coopératives livrent leur tout-venant à Alépé et leurs concentrés aux centres</text>
+<text x="60" y="1413" font-size="20" fill="#6B7280">régionaux de la société nationale, qui paie directement les titulaires.</text>
+<text x="60" y="1455" font-size="20" fill="#6B7280">Le système de la filière, version 1, octobre 2026 — schéma de principe.</text>
+</svg>
